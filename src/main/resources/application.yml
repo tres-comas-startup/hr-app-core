@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: HR-App
+  profiles:
+    active: ${ACTIVE_PROFILES:prod}
+
+server:
+  port: ${SERVER_PORT:8090}
+#logging:
+#  level: INFO
