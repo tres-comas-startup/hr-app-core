@@ -10,7 +10,7 @@
       <env name="DB_USER" value="hrapp-user" />
       <env name="DB_PASSWORD" value="hrapp#1234" />
       <env name="DB_NAME" value="hrapp" />
-      <env name="ACRIVE_PROFILES" value="dev, postgres" />
+      <env name="ACTIVE_PROFILES" value="dev,postgres" />
     </envs>
     <method v="2">
       <option name="Make" enabled="true" />
