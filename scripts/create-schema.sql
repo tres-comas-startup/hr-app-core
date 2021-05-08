@@ -1,0 +1,3 @@
+CREATE DATABASE hrapp;
+
+-- GRANT ALL PRIVILEGES ON DATABASE hrapp TO "hrapp-user";
