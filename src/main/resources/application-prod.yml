@@ -1,8 +1,7 @@
 logging:
   level:
-    web: warn
+    root: warn
 
-#spring:
 #  datasource:
 #    initialization-mode: always
 #    schema: classpath*:database/initDB.sql

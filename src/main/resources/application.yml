@@ -2,7 +2,12 @@ spring:
   application:
     name: HR-App
   profiles:
-    active: ${ACTIVE_PROFILES:'dev, h2'}
+    active: ${ACTIVE_PROFILES:'dev,h2'}
 
 server:
   port: ${SERVER_PORT:8090}
+
+logging:
+  level:
+    com:
+      trescomas: trace
