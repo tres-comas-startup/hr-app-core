@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="hr-app-core.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.trescomas.Application" />
+    <option name="DEBUG_MODE" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+    <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <envs>
+      <env name="DB_USER" value="hrapp-user" />
+      <env name="DB_PASSWORD" value="hrapp#1234" />
+      <env name="DB_NAME" value="hrapp" />
+      <env name="ACRIVE_PROFILES" value="dev, postgres" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
