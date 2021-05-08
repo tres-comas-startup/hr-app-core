@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/${DB_NAME:'hrapp'}
+    driverClassName: org.postgresql.Driver
+    username: ${DB_USER:'hrapp-user'}
+    password: ${DB_PASSWORD:'hrapp#1234'}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    database: postgresql
+    hibernate:
+      ddl-auto: update

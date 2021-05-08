@@ -1,9 +1,8 @@
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: 'jdbc:mariadb://${DB_HOST:localhost}:3306/${DB_NAME}'
-    username: ${DB_USER:'root'}
-    password: ${DB_PASSWORD:''}
+logging:
+  level:
+    root: warn
+
+#  datasource:
+#    initialization-mode: always
+#    schema: classpath*:database/initDB.sql
+#    data: classpath*:database/populateDB.sql
