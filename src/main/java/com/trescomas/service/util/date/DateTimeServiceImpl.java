@@ -1,4 +1,4 @@
-package com.trescomas.services.util.date;
+package com.trescomas.service.util.date;
 
 import org.springframework.stereotype.Service;
 
