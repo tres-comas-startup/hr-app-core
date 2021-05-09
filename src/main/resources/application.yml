@@ -11,3 +11,6 @@ logging:
   level:
     com:
       trescomas: trace
+
+hrapp:
+  jwtSecret: zdtlD3JK56m6wTTgsNFhqzjqP
