@@ -1,6 +1,6 @@
 package com.trescomas.domain.dto.user;
 
-import com.trescomas.domain.model.role.Role;
+import com.trescomas.domain.model.Role;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;

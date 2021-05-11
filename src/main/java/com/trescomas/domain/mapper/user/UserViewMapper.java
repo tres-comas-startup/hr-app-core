@@ -1,7 +1,7 @@
 package com.trescomas.domain.mapper.user;
 
 import com.trescomas.domain.dto.user.UserView;
-import com.trescomas.domain.model.user.User;
+import com.trescomas.domain.model.User;
 import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;
