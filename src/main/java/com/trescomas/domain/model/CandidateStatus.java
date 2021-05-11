@@ -16,7 +16,6 @@ public class CandidateStatus {
     private Long id;
 
     @NonNull
-    @Max(15)
     @Column(nullable = false, unique = true)
     private String title;
 

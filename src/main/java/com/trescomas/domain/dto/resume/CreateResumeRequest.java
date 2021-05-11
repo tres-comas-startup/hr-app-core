@@ -12,6 +12,6 @@ public record CreateResumeRequest(
         @NotNull LocalDate birthDate,
         @Min(0) @Max(99) int experienceYears,
         @NotNull Set<Technology> technologies,
-        @Max(255) String note
+        String note
 ) {
 }
