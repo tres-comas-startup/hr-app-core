@@ -5,17 +5,17 @@ import com.trescomas.domain.model.Candidate;
 import com.trescomas.domain.model.CandidateStatus;
 import com.trescomas.repository.CandidateRepository;
 import lombok.AllArgsConstructor;
-import org.slf4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Slf4j
 @Service
 @AllArgsConstructor
 public class CandidateService implements DataService<Candidate, Long> {
 
-    private final Logger log;
     private final CandidateRepository candidateRepository;
     private final CandidateStatusService candidateStatusService;
 

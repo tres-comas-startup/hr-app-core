@@ -9,7 +9,7 @@ import com.trescomas.repository.UserRepository;
 import com.trescomas.service.DataService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.slf4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -18,12 +18,10 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.validation.ValidationException;
 import java.util.List;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class UserService implements DataService<User, Long> {
-
-    @NonNull
-    private final Logger log;
 
     @NonNull
     private final UserRepository userRepository;

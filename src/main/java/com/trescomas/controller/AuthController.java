@@ -1,7 +1,7 @@
-package com.trescomas.api;
+package com.trescomas.controller;
 
+import com.trescomas.config.Routes;
 import com.trescomas.config.security.JwtTokenUtil;
-import com.trescomas.config.security.Routes;
 import com.trescomas.domain.dto.api.AuthRequest;
 import com.trescomas.domain.dto.user.CreateUserRequest;
 import com.trescomas.domain.dto.user.UserView;
@@ -26,8 +26,8 @@ import javax.validation.ValidationException;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping(path = Routes.PUBLIC)
-public class AuthApi {
+@RequestMapping(path = Routes.BASE_PUBLIC_API)
+public class AuthController {
 
     private final Logger log;
     private final AuthenticationManager authenticationManager;
