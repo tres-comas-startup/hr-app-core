@@ -31,7 +31,7 @@ public class Candidate {
     private String note;
 
     @NonNull
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany()
     @JoinTable(
             name = "candidates_technologies",
             joinColumns = @JoinColumn(name = "candidate_id", referencedColumnName = "id"),
