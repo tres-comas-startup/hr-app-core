@@ -31,7 +31,7 @@ public class Candidate {
     private String note;
 
     @NonNull
-    @ManyToMany()
+    @ManyToMany
     @JoinTable(
             name = "candidates_technologies",
             joinColumns = @JoinColumn(name = "candidate_id", referencedColumnName = "id"),
