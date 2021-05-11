@@ -1,25 +1,24 @@
-package com.trescomas.domain.model.user;
+package com.trescomas.domain.model;
 
-import com.trescomas.domain.model.role.Role;
-import lombok.*;
+import lombok.Data;
+import lombok.NonNull;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.Set;
 
 @Data
-    @NoArgsConstructor
 @Entity
-@Table(name = "`user`")
+@Table(name = "users")
 public class User implements UserDetails {
+
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @CreatedDate
@@ -29,17 +28,26 @@ public class User implements UserDetails {
 
     private boolean enabled = true;
 
+    @NonNull
     private String username;
 
+    @NonNull
     private String password;
 
+    @NonNull
     private String fullName;
 
-//    private Set<Role> authorities = new HashSet<>();
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "users_roles",
+            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id")
+    )
+    private Set<Role> roles = new HashSet<>();
 
     @Override
     public Set<Role> getAuthorities() {
-        return Set.of();
+        return Collections.unmodifiableSet(roles);
     }
 
     @Override
