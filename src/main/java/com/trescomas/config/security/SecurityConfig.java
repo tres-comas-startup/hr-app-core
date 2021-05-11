@@ -1,5 +1,6 @@
 package com.trescomas.config.security;
 
+import com.trescomas.config.Routes;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.springframework.context.annotation.Bean;
@@ -72,7 +73,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // Set permissions on endpoints
         http.authorizeRequests()
                 // Our public endpoints
-                .antMatchers(Routes.PUBLIC + "/**").permitAll()
+//                .antMatchers(Routes.PUBLIC + "/**").permitAll()
                 // Our private endpoints
                 .anyRequest().authenticated();
 
