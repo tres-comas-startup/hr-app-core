@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -47,7 +47,7 @@ public class User implements UserDetails {
 
     @Override
     public Set<Role> getAuthorities() {
-        return Collections.unmodifiableSet(roles);
+        return roles;
     }
 
     @Override
@@ -63,6 +63,11 @@ public class User implements UserDetails {
     @Override
     public boolean isCredentialsNonExpired() {
         return enabled;
+    }
+
+    public User addRoles(Role... roles) {
+        this.roles.addAll(Arrays.asList(roles));
+        return this;
     }
 
 }

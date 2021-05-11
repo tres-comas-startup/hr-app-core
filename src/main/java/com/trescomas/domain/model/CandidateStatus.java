@@ -4,7 +4,7 @@ import lombok.Data;
 import lombok.NonNull;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
+import java.util.Set;
 
 @Data
 @Table(name = "candidate_statuses")
@@ -16,9 +16,13 @@ public class CandidateStatus {
     private Long id;
 
     @NonNull
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, length = 50)
     private String title;
 
     private String note;
+
+    @OneToMany
+    @JoinColumn(name = "candidate_id")
+    private Set<Candidate> candidates;
 
 }

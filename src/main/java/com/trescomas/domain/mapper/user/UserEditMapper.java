@@ -5,7 +5,7 @@ import com.trescomas.domain.model.User;
 import org.springframework.stereotype.Component;
 
 @Component
-public class UserEditMapper{
+public class UserEditMapper {
     public User create(CreateUserRequest request) {
         var user = new User(
                 request.username(),

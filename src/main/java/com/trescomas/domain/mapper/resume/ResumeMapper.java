@@ -8,11 +8,12 @@ import org.springframework.stereotype.Component;
 public class ResumeMapper {
 
     public Candidate create(CreateResumeRequest request) {
-        return new Candidate(
+        var candidate = new Candidate(
                 request.birthDate(),
-                request.experienceYears(),
-                request.technologies()
+                request.experienceYears()
         );
+        
+        return candidate.addTechnologies(request.technologies());
     }
 
 }

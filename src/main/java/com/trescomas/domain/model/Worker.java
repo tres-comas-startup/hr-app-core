@@ -15,6 +15,10 @@ public class Worker {
 
     private String note;
 
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
     @ManyToOne
     @JoinColumn(name = "department_id")
     private Department department;

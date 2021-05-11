@@ -1,6 +1,5 @@
 package com.trescomas.repository;
 
-import com.trescomas.domain.constants.CandidateStatusTitle;
 import com.trescomas.domain.model.CandidateStatus;
 import org.springframework.data.repository.CrudRepository;
 
