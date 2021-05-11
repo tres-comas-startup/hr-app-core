@@ -1,6 +1,6 @@
 package com.trescomas.config.security;
 
-import com.trescomas.repository.user.UserRepository;
+import com.trescomas.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

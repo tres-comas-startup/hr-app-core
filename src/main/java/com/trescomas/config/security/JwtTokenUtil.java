@@ -1,13 +1,12 @@
 package com.trescomas.config.security;
 
-import com.trescomas.domain.model.user.User;
+import com.trescomas.domain.model.User;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.SignatureException;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.util.Date;
 
 @Component
