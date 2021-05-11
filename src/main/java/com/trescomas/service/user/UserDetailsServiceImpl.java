@@ -1,6 +1,6 @@
 package com.trescomas.service.user;
 
-import com.trescomas.repository.user.UserRepository;
+import com.trescomas.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
