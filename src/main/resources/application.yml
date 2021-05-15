@@ -3,6 +3,13 @@ spring:
     name: HR-App
   profiles:
     active: ${ACTIVE_PROFILES:'dev,h2'}
+  data:
+    rest:
+      base-path: /api
+      default-media-type: application/json
+  jackson:
+    visibility:
+      field: any
 
 server:
   port: ${SERVER_PORT:8090}
