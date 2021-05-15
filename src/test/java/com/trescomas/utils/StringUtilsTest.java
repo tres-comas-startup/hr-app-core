@@ -1,7 +1,7 @@
 package com.trescomas.utils;
 
-import com.trescomas.service.role.impl.RoleDataServiceImpl;
-import com.trescomas.service.user.impl.UserDataServiceImpl;
+import com.trescomas.service.dataService.impl.RoleDataServiceImpl;
+import com.trescomas.service.dataService.impl.UserDataServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -8,7 +8,7 @@ import com.trescomas.repository.BaseRepository;
 
 import java.util.List;
 
-public interface CandidateRepository extends BaseRepository<Candidate> {
+public interface CandidateRepository extends BaseRepository<Candidate, Long> {
 
     default Candidate get(Long id) {
         return findById(id).orElseThrow(() -> new CandidateNotFoundException(id));

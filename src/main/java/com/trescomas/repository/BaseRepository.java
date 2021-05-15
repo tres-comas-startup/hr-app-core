@@ -5,16 +5,16 @@ import com.trescomas.exception.ResourceNotFoundException;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
-import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
 @NoRepositoryBean
-public interface BaseRepository<ENTITY extends BaseEntity> extends CrudRepository<ENTITY, Long> {
+public interface BaseRepository<ENTITY extends BaseEntity, ID extends Serializable> extends CrudRepository<ENTITY, ID> {
 
-    default ENTITY get(@NotNull Long id) {
-        return findById(id).orElseThrow(() -> new ResourceNotFoundException(id));
+    default ENTITY get(ID id) {
+        return findById(id).orElseThrow(() -> new ResourceNotFoundException((Long) id));
     }
 
-    default ENTITY get(@NotNull Long id, @NotNull ResourceNotFoundException e) {
+    default ENTITY get(ID id, ResourceNotFoundException e) {
         return findById(id).orElseThrow(() -> e);
     }
 

@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
 
-public interface WorkerPositionRepository extends CrudRepository<WorkerPosition, Long> {
+public interface WorkerPositionRepository extends BaseRepository<WorkerPosition, Long> {
 
     Optional<WorkerPosition> findByTitle(WorkerPositionTitle title);
 

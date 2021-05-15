@@ -1,6 +1,6 @@
 package com.trescomas.utils;
 
-import com.trescomas.service.DataService;
+import com.trescomas.service.dataService.abstraction.DataService;
 
 public class StringUtils extends org.springframework.util.StringUtils {
 

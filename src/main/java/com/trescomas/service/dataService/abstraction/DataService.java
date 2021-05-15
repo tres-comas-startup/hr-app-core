@@ -1,4 +1,4 @@
-package com.trescomas.service;
+package com.trescomas.service.dataService.abstraction;
 
 import com.trescomas.domain.model.BaseEntity;
 

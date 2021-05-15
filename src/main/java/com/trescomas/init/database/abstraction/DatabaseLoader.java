@@ -1,4 +1,4 @@
-package com.trescomas.init.abstraction;
+package com.trescomas.init.database.abstraction;
 
 @FunctionalInterface
 public interface DatabaseLoader {

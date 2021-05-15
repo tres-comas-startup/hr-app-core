@@ -1,10 +1,10 @@
-package com.trescomas.init.impl;
+package com.trescomas.init.database.impl;
 
 import com.trescomas.domain.enums.RoleTitle;
 import com.trescomas.domain.model.user.Role;
-import com.trescomas.init.abstraction.AbstractDatabaseLoader;
-import com.trescomas.init.database.LoadOrder;
-import com.trescomas.service.role.RoleDataService;
+import com.trescomas.init.database.abstraction.AbstractDatabaseLoader;
+import com.trescomas.init.database.constants.LoadOrder;
+import com.trescomas.service.dataService.abstraction.RoleDataService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;

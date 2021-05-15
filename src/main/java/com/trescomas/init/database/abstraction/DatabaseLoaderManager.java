@@ -1,6 +1,5 @@
-package com.trescomas.init.manager;
+package com.trescomas.init.database.abstraction;
 
-import com.trescomas.init.abstraction.DatabaseLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

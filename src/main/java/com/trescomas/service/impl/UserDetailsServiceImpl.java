@@ -1,4 +1,4 @@
-package com.trescomas.service.user;
+package com.trescomas.service.impl;
 
 import com.trescomas.repository.UserRepository;
 import lombok.AllArgsConstructor;

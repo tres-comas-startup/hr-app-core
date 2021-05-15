@@ -7,7 +7,7 @@ import com.trescomas.repository.BaseRepository;
 
 import java.util.Optional;
 
-public interface CandidateStatusRepository extends BaseRepository<CandidateStatus> {
+public interface CandidateStatusRepository extends BaseRepository<CandidateStatus, Long> {
 
     Optional<CandidateStatus> findByTitle(CandidateStatusTitle title);
 

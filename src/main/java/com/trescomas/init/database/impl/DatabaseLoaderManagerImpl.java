@@ -1,6 +1,7 @@
-package com.trescomas.init.manager;
+package com.trescomas.init.database.impl;
 
-import com.trescomas.init.abstraction.DatabaseLoader;
+import com.trescomas.init.database.abstraction.DatabaseLoader;
+import com.trescomas.init.database.abstraction.DatabaseLoaderManager;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

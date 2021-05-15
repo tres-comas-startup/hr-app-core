@@ -8,7 +8,7 @@ import com.trescomas.repository.BaseRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface DepartmentRepository extends BaseRepository<Department> {
+public interface DepartmentRepository extends BaseRepository<Department, Long> {
 
     Optional<Department> findByName(String name);
 

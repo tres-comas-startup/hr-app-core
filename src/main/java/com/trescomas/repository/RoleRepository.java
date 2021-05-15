@@ -7,7 +7,7 @@ import com.trescomas.repository.BaseRepository;
 import javax.validation.constraints.NotNull;
 import java.util.Optional;
 
-public interface RoleRepository extends BaseRepository<Role> {
+public interface RoleRepository extends BaseRepository<Role, Long> {
 
     Optional<Role> findByTitle(@NotNull RoleTitle title);
 

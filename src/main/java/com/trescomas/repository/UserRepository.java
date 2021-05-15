@@ -7,7 +7,7 @@ import com.trescomas.repository.BaseRepository;
 import javax.validation.constraints.NotNull;
 import java.util.Optional;
 
-public interface UserRepository extends BaseRepository<User> {
+public interface UserRepository extends BaseRepository<User, Long> {
 
     @Override
     default User get(Long id) {

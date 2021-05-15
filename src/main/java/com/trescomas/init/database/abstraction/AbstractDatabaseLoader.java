@@ -1,7 +1,7 @@
-package com.trescomas.init.abstraction;
+package com.trescomas.init.database.abstraction;
 
 import com.trescomas.domain.model.BaseEntity;
-import com.trescomas.service.DataService;
+import com.trescomas.service.dataService.abstraction.DataService;
 import lombok.RequiredArgsConstructor;
 
 import java.io.Serializable;

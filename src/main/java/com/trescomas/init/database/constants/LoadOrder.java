@@ -1,4 +1,4 @@
-package com.trescomas.init.database;
+package com.trescomas.init.database.constants;
 
 /**
  * An interface that represents constants for order in List of DatabaseLoaders
