@@ -1,40 +1,27 @@
-package com.trescomas.domain.model;
+package com.trescomas.domain.model.user;
 
+import com.trescomas.domain.model.BaseEntity;
 import lombok.Data;
-import lombok.NonNull;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
+import lombok.EqualsAndHashCode;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 @Table(name = "users")
-public class User implements UserDetails {
+public class User extends BaseEntity implements UserDetails {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @CreatedDate
-    private LocalDateTime createdAt;
-    @LastModifiedDate
-    private LocalDateTime modifiedAt;
-
-    private boolean enabled = true;
-
-    @NonNull
+    @Column(nullable = false, unique = true)
     private String username;
 
-    @NonNull
+    @Column(nullable = false)
     private String password;
 
-    @NonNull
+    @Column(nullable = false)
     private String fullName;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -52,22 +39,22 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return enabled;
+        return isEnabled();
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return enabled;
+        return isEnabled();
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return enabled;
+        return isEnabled();
     }
 
-    public User addRoles(Role... roles) {
-        this.roles.addAll(Arrays.asList(roles));
-        return this;
+    @Override
+    public boolean isEnabled() {
+        return !isDisabled();
     }
 
 }

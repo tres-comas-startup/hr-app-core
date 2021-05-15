@@ -1,23 +1,28 @@
-package com.trescomas.domain.model;
+package com.trescomas.domain.model.department;
 
+import com.trescomas.domain.model.BaseEntity;
+import com.trescomas.domain.model.technology.Technology;
+import com.trescomas.domain.model.worker.Worker;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Table(name = "departments")
 @Entity
-public class Department {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+public class Department extends BaseEntity {
 
     @Column(nullable = false, unique = true, length = 50)
     private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "department_id")
+    private DepartmentType departmentType;
 
     @ManyToMany
     @JoinTable(

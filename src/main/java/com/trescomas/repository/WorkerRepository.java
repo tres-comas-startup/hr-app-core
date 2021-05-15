@@ -1,7 +1,16 @@
 package com.trescomas.repository;
 
-import com.trescomas.domain.model.Worker;
-import org.springframework.data.repository.CrudRepository;
+import com.trescomas.domain.enums.WorkerPositionTitle;
+import com.trescomas.domain.model.worker.Worker;
+import com.trescomas.domain.model.worker.WorkerPosition;
+import com.trescomas.repository.BaseRepository;
 
-public interface WorkerRepository extends CrudRepository<Worker, Long> {
+import java.util.List;
+
+public interface WorkerRepository extends BaseRepository<Worker> {
+
+    List<Worker> findAllByPosition(WorkerPosition position);
+
+    List<Worker> findAllByPositionTitle(WorkerPositionTitle title);
+
 }

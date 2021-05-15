@@ -1,37 +1,47 @@
-package com.trescomas.domain.model;
+package com.trescomas.domain.model.candidate;
 
+import com.trescomas.domain.model.BaseEntity;
+import com.trescomas.domain.model.technology.Technology;
+import com.trescomas.domain.model.user.User;
 import lombok.Data;
-import lombok.NonNull;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 @Table(name = "candidates")
-public class Candidate {
+public class Candidate extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @NonNull
     @Column(nullable = false)
     private LocalDate birthDate;
 
     @Min(0)
     @Max(99)
-    @NonNull
     @Column(nullable = false)
     private Integer experienceYears;
 
+    @Min(0)
+    @Column(nullable = false)
+    private BigDecimal desiredSalary;
+
+    @Email
+    @Column(nullable = false, unique = true)
+    private String email;
+
+    @Column(nullable = false, unique = true)
+    private String phone;
+
     private String note;
 
-    @NonNull
     @ManyToMany
     @JoinTable(
             name = "candidates_technologies",
