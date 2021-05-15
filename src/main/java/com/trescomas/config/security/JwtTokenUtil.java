@@ -1,6 +1,6 @@
 package com.trescomas.config.security;
 
-import com.trescomas.domain.model.User;
+import com.trescomas.domain.model.user.User;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.SignatureException;
 import org.slf4j.Logger;

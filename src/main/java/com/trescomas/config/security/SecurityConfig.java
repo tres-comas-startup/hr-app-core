@@ -73,7 +73,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // Set permissions on endpoints
         http.authorizeRequests()
                 // Our public endpoints
-//                .antMatchers(Routes.PUBLIC + "/**").permitAll()
+                .antMatchers("/api/**").permitAll()
                 // Our private endpoints
                 .anyRequest().authenticated();
 
