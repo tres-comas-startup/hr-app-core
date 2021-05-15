@@ -1,20 +1,21 @@
 package com.trescomas.service;
 
+import com.trescomas.domain.model.BaseEntity;
+
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
-public interface DataService<T, ID extends Serializable> {
+public interface DataService<ENTITY extends BaseEntity, ID extends Serializable> {
 
     Long count();
 
-    List<T> list();
+    List<ENTITY> list();
 
-    T get(ID id);
+    ENTITY get(@NotNull final ID id);
 
-    T save(T instance);
+    ENTITY save(@NotNull final ENTITY entity);
 
-    List<T> saveAll(List<T> instances);
-
-    void delete(T instance);
+    void deleteById(@NotNull final ID id);
 
 }
