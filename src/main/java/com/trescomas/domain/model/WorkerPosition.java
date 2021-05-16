@@ -1,7 +1,6 @@
-package com.trescomas.domain.model.worker;
+package com.trescomas.domain.model;
 
 import com.trescomas.domain.enums.WorkerPositionTitle;
-import com.trescomas.domain.model.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,7 +11,7 @@ import java.util.Set;
 @Data
 @Table(name = "worker_positions")
 @Entity
-public class WorkerPosition extends BaseEntity {
+public class WorkerPosition extends BaseEntity<Long> {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 50)

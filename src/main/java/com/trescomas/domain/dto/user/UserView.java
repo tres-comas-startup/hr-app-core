@@ -1,5 +1,9 @@
 package com.trescomas.domain.dto.user;
 
-public record UserView(Long id, String username, String fullName) {
+import com.trescomas.domain.dto.role.RoleView;
+
+import java.util.Set;
+
+public record UserView(String username, String fullName, Set<RoleView> roles) {
 }
 

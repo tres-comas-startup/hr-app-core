@@ -1,8 +1,5 @@
-package com.trescomas.domain.model.candidate;
+package com.trescomas.domain.model;
 
-import com.trescomas.domain.model.BaseEntity;
-import com.trescomas.domain.model.technology.Technology;
-import com.trescomas.domain.model.user.User;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -19,7 +16,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "candidates")
-public class Candidate extends BaseEntity {
+public class Candidate extends BaseEntity<Long> {
 
     @Column(nullable = false)
     private LocalDate birthDate;

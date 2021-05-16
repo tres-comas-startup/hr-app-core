@@ -1,11 +1,7 @@
-package com.trescomas.domain.model.technology;
+package com.trescomas.domain.model;
 
-import com.trescomas.domain.model.BaseEntity;
-import com.trescomas.domain.model.candidate.Candidate;
-import com.trescomas.domain.model.department.Department;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NonNull;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,9 +14,8 @@ import java.util.Set;
 @Data
 @Table(name = "technologies")
 @Entity
-public class Technology extends BaseEntity {
+public class Technology extends BaseEntity<Long> {
 
-    @NonNull
     @Column(nullable = false, unique = true, length = 50)
     private String name;
 

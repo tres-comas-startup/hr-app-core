@@ -1,8 +1,5 @@
-package com.trescomas.domain.model.department;
+package com.trescomas.domain.model;
 
-import com.trescomas.domain.model.BaseEntity;
-import com.trescomas.domain.model.technology.Technology;
-import com.trescomas.domain.model.worker.Worker;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,7 +12,7 @@ import java.util.Set;
 @Data
 @Table(name = "departments")
 @Entity
-public class Department extends BaseEntity {
+public class Department extends BaseEntity<Long> {
 
     @Column(nullable = false, unique = true, length = 50)
     private String name;

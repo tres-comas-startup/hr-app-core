@@ -1,6 +1,5 @@
-package com.trescomas.domain.model.user;
+package com.trescomas.domain.model;
 
-import com.trescomas.domain.model.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,7 +12,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "users")
-public class User extends BaseEntity implements UserDetails {
+public class User extends BaseEntity<Long> implements UserDetails {
 
     @Column(nullable = false, unique = true)
     private String username;

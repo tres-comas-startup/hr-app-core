@@ -1,8 +1,5 @@
-package com.trescomas.domain.model.worker;
+package com.trescomas.domain.model;
 
-import com.trescomas.domain.model.BaseEntity;
-import com.trescomas.domain.model.department.Department;
-import com.trescomas.domain.model.user.User;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -14,7 +11,7 @@ import javax.validation.constraints.NotNull;
 @Data
 @Table(name = "workers")
 @Entity
-public class Worker extends BaseEntity {
+public class Worker extends BaseEntity<Long> {
 
     private String note;
 

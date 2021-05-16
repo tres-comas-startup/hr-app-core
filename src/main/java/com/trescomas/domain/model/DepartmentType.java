@@ -1,7 +1,6 @@
-package com.trescomas.domain.model.department;
+package com.trescomas.domain.model;
 
 import com.trescomas.domain.enums.DepartmentTypeTitle;
-import com.trescomas.domain.model.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -12,7 +11,7 @@ import java.util.Set;
 @Data
 @Table(name = "department_types")
 @Entity
-public class DepartmentType extends BaseEntity {
+public class DepartmentType extends BaseEntity<Long> {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 50)

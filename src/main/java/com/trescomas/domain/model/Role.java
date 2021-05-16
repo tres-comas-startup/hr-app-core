@@ -1,8 +1,6 @@
-package com.trescomas.domain.model.user;
+package com.trescomas.domain.model;
 
 import com.trescomas.domain.enums.RoleTitle;
-import com.trescomas.domain.model.BaseEntity;
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.security.core.GrantedAuthority;
@@ -14,7 +12,7 @@ import java.util.Set;
 @Data
 @Table(name = "roles")
 @Entity
-public class Role extends BaseEntity implements GrantedAuthority {
+public class Role extends BaseEntity<Long> implements GrantedAuthority {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, unique = true, length = 50)

@@ -2,13 +2,14 @@ package com.trescomas.domain.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -17,17 +18,24 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @MappedSuperclass
-public abstract class BaseEntity {
+@EntityListeners(AuditingEntityListener.class)
+public abstract class BaseEntity<ID extends Serializable> {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private ID id;
 
     @CreatedDate
-    private LocalDateTime createdAt;
+    private LocalDateTime createdDate;
+
+    @CreatedBy
+    private String createdBy;
 
     @LastModifiedDate
-    private LocalDateTime modifiedAt;
+    private LocalDateTime lastModifiedDate;
+
+    @LastModifiedBy
+    private String lastModifiedBy;
 
     private boolean disabled;
 
