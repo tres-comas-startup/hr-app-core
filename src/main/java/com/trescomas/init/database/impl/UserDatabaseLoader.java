@@ -1,6 +1,7 @@
 package com.trescomas.init.database.impl;
 
-import com.trescomas.domain.model.user.User;
+import com.trescomas.domain.enums.SystemUsernames;
+import com.trescomas.domain.model.User;
 import com.trescomas.init.database.abstraction.AbstractDatabaseLoader;
 import com.trescomas.init.database.constants.LoadOrder;
 import com.trescomas.service.dataService.abstraction.RoleDataService;
@@ -27,23 +28,23 @@ public class UserDatabaseLoader extends AbstractDatabaseLoader<User, Long> {
 
         final var userDataService = (UserDataService) super.dataService;
 
-//        if (!userDataService.existsByUsername(SystemUsernames.ADMIN.getValue())) {
-//            userDataService.create(
-//                    "Системный администратор",
-//                    SystemUsernames.ADMIN.getValue(),
-//                    "hradmin#12345",
-//                    Set.of(roleDataService.findByTitle(RoleTitle.ADMIN))
-//            );
-//        }
-//
-//        if (!userDataService.existsByUsername(SystemUsernames.HR_MANAGER.getValue())) {
-//            userDataService.create(
-//                    "Есьман Арина",
-//                    SystemUsernames.HR_MANAGER.getValue(),
-//                    "hrhr#12345",
-//                    Set.of(roleDataService.findByTitle(RoleTitle.HR_MANAGER))
-//            );
-//        }
+        if (!userDataService.existsByUsername(SystemUsernames.ADMIN.getValue())) {
+            userDataService.create(
+                    "Системный администратор",
+                    SystemUsernames.ADMIN.getValue(),
+                    "hradmin#12345",
+                    null
+            );
+        }
+
+        if (!userDataService.existsByUsername(SystemUsernames.HR_MANAGER.getValue())) {
+            userDataService.create(
+                    "Есьман Арина",
+                    SystemUsernames.HR_MANAGER.getValue(),
+                    "hrhr#12345",
+                    null
+            );
+        }
 
         log.debug(getCompletedMessage());
     }

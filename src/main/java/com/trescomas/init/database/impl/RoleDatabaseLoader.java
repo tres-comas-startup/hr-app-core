@@ -1,7 +1,7 @@
 package com.trescomas.init.database.impl;
 
 import com.trescomas.domain.enums.RoleTitle;
-import com.trescomas.domain.model.user.Role;
+import com.trescomas.domain.model.Role;
 import com.trescomas.init.database.abstraction.AbstractDatabaseLoader;
 import com.trescomas.init.database.constants.LoadOrder;
 import com.trescomas.service.dataService.abstraction.RoleDataService;
