@@ -6,7 +6,7 @@ import com.trescomas.config.json.serializer.LocalDateDeserializer;
 import com.trescomas.config.json.serializer.LocalDateSerializer;
 import com.trescomas.config.json.serializer.LocalDateTimeDeserializer;
 import com.trescomas.config.json.serializer.LocalDateTimeSerializer;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,13 +14,13 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Configuration
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ObjectMapperConfig {
 
-    LocalDateSerializer localDateSerializer;
-    LocalDateDeserializer localDateDeserializer;
-    LocalDateTimeSerializer localDateTimeSerializer;
-    LocalDateTimeDeserializer localDateTimeDeserializer;
+    private final LocalDateSerializer localDateSerializer;
+    private final LocalDateDeserializer localDateDeserializer;
+    private final LocalDateTimeSerializer localDateTimeSerializer;
+    private final LocalDateTimeDeserializer localDateTimeDeserializer;
 
     @Bean
     public ObjectMapper objectMapper() {

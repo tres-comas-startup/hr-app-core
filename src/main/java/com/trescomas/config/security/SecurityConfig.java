@@ -1,6 +1,5 @@
 package com.trescomas.config.security;
 
-import com.trescomas.config.Routes;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.springframework.context.annotation.Bean;

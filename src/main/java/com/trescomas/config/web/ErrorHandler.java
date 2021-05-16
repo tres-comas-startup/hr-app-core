@@ -1,8 +1,11 @@
 package com.trescomas.config.web;
 
 import com.trescomas.exception.ResourceNotFoundException;
+import org.springframework.core.convert.ConversionFailedException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -18,34 +21,45 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @ControllerAdvice
-public class DefaultControllerAdvice {
+public class ErrorHandler {
+
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
+    @ExceptionHandler(BadCredentialsException.class)
+    ResponseEntity<Map<String, String>> handleBadCredentialsException(BadCredentialsException ex) {
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(buildDefaultMessageMap(ex.getMessage()));
+    }
+
+    @ResponseBody
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(ConversionFailedException.class)
+    ResponseEntity<Map<String, String>> handleConversionFailedException(ConversionFailedException ex) {
+        return ResponseEntity.badRequest().body(buildDefaultMessageMap(ex.getMessage()));
+    }
 
     @ResponseBody
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
-    public Map<String, String> handleValidationExceptions(MethodArgumentNotValidException ex) {
-        return buildObjectErrorsMap(ex.getBindingResult().getAllErrors());
+    ResponseEntity<Map<String, String>> handleValidationExceptions(MethodArgumentNotValidException ex) {
+        return ResponseEntity.badRequest().body(buildObjectErrorsMap(ex.getBindingResult().getAllErrors()));
     }
 
-    @ResponseBody
     @ExceptionHandler(EmptyResultDataAccessException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    Map<String, String> handleEmptyResultDataAccessException(EmptyResultDataAccessException ex) {
-        return buildDefaultMessageMap(ex.getMessage());
+    ResponseEntity<Map<String, String>> handleEmptyResultDataAccessException(EmptyResultDataAccessException ex) {
+        return ResponseEntity.notFound().build();
     }
 
-    @ResponseBody
     @ExceptionHandler(ResourceNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    Map<String, String> handleResourceNotFoundException(ResourceNotFoundException ex) {
-        return buildDefaultMessageMap(ex.getMessage());
+    ResponseEntity<Map<String, String>> handleResourceNotFoundException(ResourceNotFoundException ex) {
+        return ResponseEntity.notFound().build();
     }
 
     @ResponseBody
     @ExceptionHandler(ValidationException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    Map<String, String> handleValidationException(ValidationException ex) {
-        return buildDefaultMessageMap(ex.getMessage());
+    ResponseEntity<Map<String, String>> handleValidationException(ValidationException ex) {
+        return ResponseEntity.badRequest().body(buildDefaultMessageMap(ex.getMessage()));
     }
 
     /**

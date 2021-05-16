@@ -1,4 +1,4 @@
-package com.trescomas.config;
+package com.trescomas.config.web;
 
 public interface Routes {
 

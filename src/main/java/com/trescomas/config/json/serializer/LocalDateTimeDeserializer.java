@@ -3,7 +3,7 @@ package com.trescomas.config.json.serializer;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
-import com.trescomas.service.util.date.DateTimeService;
+import com.trescomas.service.abstraction.DateTimeService;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 
