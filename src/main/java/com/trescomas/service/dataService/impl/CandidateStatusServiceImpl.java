@@ -1,9 +1,8 @@
 package com.trescomas.service.dataService.impl;
 
 import com.trescomas.domain.enums.CandidateStatusTitle;
-import com.trescomas.domain.model.candidate.CandidateStatus;
+import com.trescomas.domain.model.CandidateStatus;
 import com.trescomas.service.abstraction.CandidateStatusService;
-import com.trescomas.service.dataService.impl.CandidateStatusDataService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

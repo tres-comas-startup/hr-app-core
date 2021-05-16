@@ -1,7 +1,6 @@
 package com.trescomas.service.dataService.abstraction;
 
-import com.trescomas.domain.model.candidate.Candidate;
-import com.trescomas.service.dataService.abstraction.DataService;
+import com.trescomas.domain.model.Candidate;
 
 public interface CandidateDataService extends DataService<Candidate, Long> {
 

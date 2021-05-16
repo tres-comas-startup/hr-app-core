@@ -1,8 +1,7 @@
 package com.trescomas.service.dataService.abstraction;
 
-import com.trescomas.domain.model.user.Role;
-import com.trescomas.domain.model.user.User;
-import com.trescomas.service.dataService.abstraction.DataService;
+import com.trescomas.domain.model.Role;
+import com.trescomas.domain.model.User;
 
 import javax.validation.constraints.NotNull;
 import java.util.Set;

@@ -4,7 +4,7 @@ import com.trescomas.domain.dto.candidate.CandidateCreateRequest;
 import com.trescomas.domain.dto.candidate.CandidateUpdateRequest;
 import com.trescomas.domain.dto.candidate.CandidateView;
 import com.trescomas.domain.mapper.CandidateMapper;
-import com.trescomas.domain.model.candidate.CandidateStatus;
+import com.trescomas.domain.model.CandidateStatus;
 import com.trescomas.service.abstraction.CandidateService;
 import com.trescomas.service.dataService.impl.CandidateStatusDataService;
 import com.trescomas.service.dataService.impl.CandidateDataServiceImpl;

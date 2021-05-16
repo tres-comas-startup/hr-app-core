@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public interface DateTimeService {
 
-    String DATE_TIME_FORMAT_PATTERN = "dd.MM.yyyy HH:mm";
+    String DATE_TIME_FORMAT_PATTERN = "dd.MM.yyyy, HH:mm";
     String DATE_FORMAT_PATTERN = "dd.MM.yyyy";
 
     DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(DATE_TIME_FORMAT_PATTERN);

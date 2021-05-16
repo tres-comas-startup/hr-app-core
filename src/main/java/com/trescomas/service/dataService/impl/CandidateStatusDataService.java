@@ -1,7 +1,7 @@
 package com.trescomas.service.dataService.impl;
 
 import com.trescomas.domain.enums.CandidateStatusTitle;
-import com.trescomas.domain.model.candidate.CandidateStatus;
+import com.trescomas.domain.model.CandidateStatus;
 import com.trescomas.repository.CandidateStatusRepository;
 import com.trescomas.service.dataService.abstraction.DataService;
 import lombok.RequiredArgsConstructor;

@@ -1,7 +1,7 @@
 package com.trescomas.service.dataService.impl;
 
-import com.trescomas.domain.model.user.Role;
-import com.trescomas.domain.model.user.User;
+import com.trescomas.domain.model.Role;
+import com.trescomas.domain.model.User;
 import com.trescomas.exception.UserNotFoundException;
 import com.trescomas.repository.UserRepository;
 import com.trescomas.service.dataService.abstraction.UserDataService;

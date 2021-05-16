@@ -1,6 +1,6 @@
 package com.trescomas.service.dataService.impl;
 
-import com.trescomas.domain.model.technology.Technology;
+import com.trescomas.domain.model.Technology;
 import com.trescomas.repository.TechnologyRepository;
 import com.trescomas.service.dataService.abstraction.DataService;
 import lombok.RequiredArgsConstructor;

@@ -1,8 +1,7 @@
 package com.trescomas.service.dataService.abstraction;
 
 import com.trescomas.domain.enums.RoleTitle;
-import com.trescomas.domain.model.user.Role;
-import com.trescomas.service.dataService.abstraction.DataService;
+import com.trescomas.domain.model.Role;
 
 import javax.validation.constraints.NotNull;
 

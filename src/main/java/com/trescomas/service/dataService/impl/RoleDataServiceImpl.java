@@ -1,7 +1,7 @@
 package com.trescomas.service.dataService.impl;
 
 import com.trescomas.domain.enums.RoleTitle;
-import com.trescomas.domain.model.user.Role;
+import com.trescomas.domain.model.Role;
 import com.trescomas.exception.RoleNotFoundException;
 import com.trescomas.repository.RoleRepository;
 import com.trescomas.service.dataService.abstraction.RoleDataService;
