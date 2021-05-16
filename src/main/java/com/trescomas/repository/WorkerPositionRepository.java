@@ -1,8 +1,7 @@
 package com.trescomas.repository;
 
 import com.trescomas.domain.enums.WorkerPositionTitle;
-import com.trescomas.domain.model.worker.WorkerPosition;
-import org.springframework.data.repository.CrudRepository;
+import com.trescomas.domain.model.WorkerPosition;
 
 import java.util.Optional;
 

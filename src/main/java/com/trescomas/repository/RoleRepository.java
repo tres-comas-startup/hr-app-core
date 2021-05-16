@@ -1,8 +1,7 @@
 package com.trescomas.repository;
 
 import com.trescomas.domain.enums.RoleTitle;
-import com.trescomas.domain.model.user.Role;
-import com.trescomas.repository.BaseRepository;
+import com.trescomas.domain.model.Role;
 
 import javax.validation.constraints.NotNull;
 import java.util.Optional;

@@ -1,7 +1,6 @@
 package com.trescomas.repository;
 
-import com.trescomas.domain.model.technology.Technology;
-import com.trescomas.repository.BaseRepository;
+import com.trescomas.domain.model.Technology;
 
 import java.util.Optional;
 

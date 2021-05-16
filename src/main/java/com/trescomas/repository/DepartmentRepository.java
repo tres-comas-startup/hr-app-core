@@ -1,9 +1,8 @@
 package com.trescomas.repository;
 
 import com.trescomas.domain.enums.DepartmentTypeTitle;
-import com.trescomas.domain.model.department.Department;
-import com.trescomas.domain.model.department.DepartmentType;
-import com.trescomas.repository.BaseRepository;
+import com.trescomas.domain.model.Department;
+import com.trescomas.domain.model.DepartmentType;
 
 import java.util.List;
 import java.util.Optional;

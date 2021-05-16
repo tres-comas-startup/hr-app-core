@@ -1,9 +1,8 @@
 package com.trescomas.repository;
 
 import com.trescomas.domain.enums.CandidateStatusTitle;
-import com.trescomas.domain.model.candidate.CandidateStatus;
+import com.trescomas.domain.model.CandidateStatus;
 import com.trescomas.exception.CandidateStatusNotFoundException;
-import com.trescomas.repository.BaseRepository;
 
 import java.util.Optional;
 

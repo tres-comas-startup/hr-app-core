@@ -1,8 +1,7 @@
 package com.trescomas.repository;
 
-import com.trescomas.domain.model.user.User;
+import com.trescomas.domain.model.User;
 import com.trescomas.exception.ResourceNotFoundException;
-import com.trescomas.repository.BaseRepository;
 
 import javax.validation.constraints.NotNull;
 import java.util.Optional;
