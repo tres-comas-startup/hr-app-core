@@ -4,8 +4,14 @@ plugins {
     id 'java'
 }
 
-configurations {
-    jar.archiveName = "hr-app-core.jar"
+jar {
+    archiveName = "hr-app-core.jar"
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'com.trescomas.Application'
+        )
+    }
 }
 
 group = 'com.trescomas'
