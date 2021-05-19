@@ -6,39 +6,29 @@ import com.trescomas.domain.model.User;
 import com.trescomas.repository.UserRepository;
 import com.trescomas.service.dataService.abstraction.RoleDataService;
 import com.trescomas.service.dataService.abstraction.UserDataService;
-import lombok.RequiredArgsConstructor;
+import com.trescomas.service.impl.BaseDataService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
-public class UserDataServiceImpl implements UserDataService {
+public class UserDataServiceImpl extends BaseDataService<User, Long> implements UserDataService {
 
     protected final UserRepository userRepository;
     private final RoleDataService roleDataService;
+    private final PasswordEncoder passwordEncoder;
 
-    @Override
-    public Long count() {
-        return userRepository.count();
-    }
-
-    @Override
-    public List<User> list() {
-        log.debug("List all users");
-        return (List<User>) userRepository.findAll();
-    }
-
-    @Override
-    public User get(Long id) {
-        log.debug("Get user with id: {}", id);
-        return userRepository.get(id);
+    public UserDataServiceImpl(UserRepository userRepository, RoleDataService roleDataService, PasswordEncoder passwordEncoder) {
+        super(userRepository);
+        this.userRepository = userRepository;
+        this.roleDataService = roleDataService;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -57,7 +47,7 @@ public class UserDataServiceImpl implements UserDataService {
 
     @Override
     public void setRoles(User user, Set<RoleTitle> roleTitles) {
-        log.debug("Set roles: {} to user: ", roleTitles, user);
+        log.debug("Set roles: {} to user: {}", roleTitles, user);
         final var roles = roleTitles.stream()
                 .map(roleDataService::findByTitle)
                 .collect(Collectors.toSet());
@@ -73,6 +63,7 @@ public class UserDataServiceImpl implements UserDataService {
     @Override
     public User save(User user) {
         log.debug("Save user: {}", user);
+        encodePassword(user);
         return userRepository.save(user);
     }
 
@@ -91,10 +82,9 @@ public class UserDataServiceImpl implements UserDataService {
         return save(user);
     }
 
-    @Transactional
-    @Override
-    public void deleteById(Long id) {
-        log.debug("Delete user: {}", id);
-        userRepository.deleteById(id);
+    private void encodePassword(User user) {
+        log.debug("Encode password for user: {}", user);
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
     }
+
 }

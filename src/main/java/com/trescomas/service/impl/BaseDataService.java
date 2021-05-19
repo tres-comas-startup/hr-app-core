@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BaseDataService<ENTITY extends BaseEntity<ID>, ID extends Serializable> implements DataService<ENTITY, ID> {
 
-    private final BaseRepository<ENTITY, ID> repository;
+    protected final BaseRepository<ENTITY, ID> repository;
 
     @Override
     public Long count() {

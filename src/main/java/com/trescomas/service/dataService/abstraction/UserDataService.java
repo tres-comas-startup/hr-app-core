@@ -16,4 +16,5 @@ public interface UserDataService extends DataService<User, Long> {
     boolean existsByUsername(@NotNull String username);
 
     void setRoles(User user, Set<RoleTitle> roleTitles);
+
 }

@@ -3,8 +3,8 @@ spring:
     name: HR-App
   profiles:
     active: ${ACTIVE_PROFILES:'dev,h2'}
-  jpa:
-    open-in-view: false
+  #  jpa:
+  #    open-in-view: false
   data:
     rest:
       base-path: /api
@@ -26,5 +26,5 @@ logging:
 
 hrapp:
   jwt:
-    secret: ${JWT_SECRET:'zdtlD3JK56m6wTTgsNFhqzjqP'}
+    secret: ${JWT_SECRET:'KUhATWNRZlRqV25acjR1N3hBJUMqRi1KYU5kUmdVa1hwMnM1djh5L0I/RShHK0tiUGVTaFZtWXEzdDZ3OXok'}
     issuer: ${JWT_ISSUER:'hrapp.io'}

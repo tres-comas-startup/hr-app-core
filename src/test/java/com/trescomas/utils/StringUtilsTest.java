@@ -12,7 +12,7 @@ class StringUtilsTest {
     @Test
     void getEntityName() {
         var roleServiceMock = new RoleDataServiceImpl(null);
-        var userDataServiceMock = new UserDataServiceImpl(null, roleServiceMock);
+        var userDataServiceMock = new UserDataServiceImpl(null, roleServiceMock, null);
 
         assertEquals("Role", StringUtils.getEntityName(roleServiceMock));
         assertEquals("User", StringUtils.getEntityName(userDataServiceMock));
