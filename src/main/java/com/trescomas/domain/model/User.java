@@ -1,14 +1,18 @@
 package com.trescomas.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@EqualsAndHashCode(callSuper = true)
+@JsonIgnoreProperties(value = {"password", "enabled", "accountNonExpired", "accountNonLocked", "credentialsNonExpired", "authorities"})
+@EqualsAndHashCode(callSuper = true, exclude = {"roles"})
+@ToString(exclude = {"roles"})
 @Data
 @Entity
 @Table(name = "users")
@@ -23,7 +27,7 @@ public class User extends BaseEntity<Long> implements UserDetails {
     @Column(nullable = false)
     private String fullName;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany()
     @JoinTable(
             name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),

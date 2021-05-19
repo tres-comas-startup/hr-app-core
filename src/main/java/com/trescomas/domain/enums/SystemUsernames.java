@@ -8,6 +8,7 @@ import lombok.Getter;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum SystemUsernames {
 
+    SYSTEM("system@hrapp.trescommas.com"),
     ADMIN("admin@hrapp.trescommas.com"),
     HR_MANAGER("hr@hrapp.trescommas.com");
 

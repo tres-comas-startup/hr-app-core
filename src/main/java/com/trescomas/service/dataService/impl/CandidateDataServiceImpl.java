@@ -1,8 +1,6 @@
 package com.trescomas.service.dataService.impl;
 
-import com.trescomas.domain.enums.CandidateStatusTitle;
 import com.trescomas.domain.model.Candidate;
-import com.trescomas.domain.model.CandidateStatus;
 import com.trescomas.repository.CandidateRepository;
 import com.trescomas.service.dataService.abstraction.CandidateDataService;
 import lombok.RequiredArgsConstructor;
@@ -51,13 +49,4 @@ public class CandidateDataServiceImpl implements CandidateDataService {
         candidateRepository.deleteById(id);
     }
 
-    public List<Candidate> findAllByStatus(CandidateStatus status) {
-        log.debug("Find all candidates with status {}", status);
-        return candidateRepository.findAllByStatus(status);
-    }
-
-    public List<Candidate> findAllByStatusTitle(CandidateStatusTitle statusTitle) {
-        log.debug("Find all candidates with status title {}", statusTitle);
-        return candidateRepository.findAllByStatusTitle(statusTitle);
-    }
 }

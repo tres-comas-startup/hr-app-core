@@ -5,7 +5,6 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -23,14 +22,12 @@ public class Worker extends BaseEntity<Long> {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @NotNull
     @ManyToOne
-    @JoinColumn(name = "department_id")
+    @JoinColumn(name = "department_id", nullable = false)
     private Department department;
 
-    @NotNull
     @ManyToOne
-    @JoinColumn(name = "worker_position_id")
+    @JoinColumn(name = "worker_position_id", nullable = false)
     private WorkerPosition position;
 
 }

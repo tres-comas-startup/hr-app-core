@@ -1,5 +1,6 @@
 package com.trescomas.controller;
 
+import com.trescomas.assembler.UserModelAssembler;
 import com.trescomas.config.web.Routes;
 import com.trescomas.domain.dto.auth.LoginRequest;
 import com.trescomas.domain.dto.auth.RegisterRequest;
@@ -23,6 +24,7 @@ import javax.validation.ValidationException;
 public class AuthenticationController {
 
     private final AuthenticationService authenticationService;
+    private final UserModelAssembler userModelAssembler;
 
     @PostMapping("login")
     public ResponseEntity<UserView> login(@RequestBody @Valid LoginRequest request) {
@@ -30,7 +32,7 @@ public class AuthenticationController {
     }
 
     @PostMapping("register")
-    public ResponseEntity<UserView> register(@RequestBody @Valid RegisterRequest request) {
+    public ResponseEntity<?> register(@RequestBody @Valid RegisterRequest request) {
         return authenticationService.register(request);
     }
 }

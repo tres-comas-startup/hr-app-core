@@ -1,5 +1,6 @@
 package com.trescomas.init.database.impl;
 
+import com.trescomas.domain.enums.RoleTitle;
 import com.trescomas.domain.enums.SystemUsernames;
 import com.trescomas.domain.model.User;
 import com.trescomas.init.database.abstraction.AbstractDatabaseLoader;
@@ -9,6 +10,8 @@ import com.trescomas.service.dataService.abstraction.UserDataService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+
+import java.util.Set;
 
 @Slf4j
 @Component
@@ -29,11 +32,11 @@ public class UserDatabaseLoader extends AbstractDatabaseLoader<User, Long> {
         final var userDataService = (UserDataService) super.dataService;
 
         if (!userDataService.existsByUsername(SystemUsernames.ADMIN.getValue())) {
-            userDataService.create(
+            final var savedUser = userDataService.create(
                     "Системный администратор",
                     SystemUsernames.ADMIN.getValue(),
                     "hradmin#12345",
-                    null
+                    Set.of(roleDataService.findByTitle(RoleTitle.ADMIN))
             );
         }
 
@@ -42,7 +45,7 @@ public class UserDatabaseLoader extends AbstractDatabaseLoader<User, Long> {
                     "Есьман Арина",
                     SystemUsernames.HR_MANAGER.getValue(),
                     "hrhr#12345",
-                    null
+                    Set.of(roleDataService.findByTitle(RoleTitle.HR_MANAGER))
             );
         }
 

@@ -9,7 +9,7 @@ import java.io.Serializable;
 import static com.trescomas.utils.StringUtils.getEntityName;
 
 @RequiredArgsConstructor
-public abstract class AbstractDatabaseLoader<ENTITY extends BaseEntity, ID extends Serializable> implements DatabaseLoader {
+public abstract class AbstractDatabaseLoader<ENTITY extends BaseEntity<ID>, ID extends Serializable> implements DatabaseLoader {
 
     protected final DataService<ENTITY, ID> dataService;
 

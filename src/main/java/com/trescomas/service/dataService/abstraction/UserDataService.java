@@ -13,4 +13,5 @@ public interface UserDataService extends DataService<User, Long> {
     User findByUsername(@NotNull String username);
 
     boolean existsByUsername(@NotNull String username);
+    
 }

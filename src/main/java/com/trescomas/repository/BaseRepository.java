@@ -7,13 +7,17 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
 import java.io.Serializable;
+import java.util.List;
 
 @NoRepositoryBean
-public interface BaseRepository<ENTITY extends BaseEntity, ID extends Serializable> extends CrudRepository<ENTITY, ID> {
+public interface BaseRepository<ENTITY extends BaseEntity<ID>, ID extends Serializable> extends CrudRepository<ENTITY, ID> {
 
     @Override
     @Query(value = "select count(entity) from #{#entityName} entity")
     long count();
+
+    @Query(value = "from #{#entityName}")
+    List<ENTITY> list();
 
     default ENTITY get(ID id) {
         return findById(id).orElseThrow(() -> new ResourceNotFoundException((Long) id));

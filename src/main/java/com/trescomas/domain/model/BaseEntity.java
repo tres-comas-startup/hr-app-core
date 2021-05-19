@@ -9,6 +9,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -28,12 +29,14 @@ public abstract class BaseEntity<ID extends Serializable> {
     @CreatedDate
     private LocalDateTime createdDate;
 
+    @Email
     @CreatedBy
     private String createdBy;
 
     @LastModifiedDate
     private LocalDateTime lastModifiedDate;
 
+    @Email
     @LastModifiedBy
     private String lastModifiedBy;
 

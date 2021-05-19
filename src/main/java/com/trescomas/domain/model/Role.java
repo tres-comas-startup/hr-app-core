@@ -1,14 +1,18 @@
 package com.trescomas.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.trescomas.domain.enums.RoleTitle;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 
 import javax.persistence.*;
 import java.util.Set;
 
-@EqualsAndHashCode(callSuper = true)
+@JsonIgnoreProperties(value = {"authority"})
+@EqualsAndHashCode(callSuper = true, exclude = {"users"})
+@ToString(exclude = {"users"})
 @Data
 @Table(name = "roles")
 @Entity

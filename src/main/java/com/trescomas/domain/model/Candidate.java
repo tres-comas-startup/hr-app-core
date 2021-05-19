@@ -10,6 +10,7 @@ import javax.validation.constraints.Min;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @EqualsAndHashCode(callSuper = true)
@@ -51,9 +52,8 @@ public class Candidate extends BaseEntity<Long> {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToOne
-    @JoinColumn(name = "status_id")
-    private CandidateStatus status;
+    @OneToMany(mappedBy = "candidate")
+    private List<CandidateReview> reviews;
 
     public Candidate addTechnology(Technology technology) {
         this.technologies.add(technology);

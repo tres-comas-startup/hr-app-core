@@ -5,7 +5,6 @@ import com.trescomas.domain.dto.auth.LoginRequest;
 import com.trescomas.domain.dto.auth.RegisterRequest;
 import com.trescomas.domain.dto.auth.UserCredentials;
 import com.trescomas.domain.dto.user.UserView;
-import com.trescomas.domain.mapper.UserMapper;
 import com.trescomas.domain.model.User;
 import com.trescomas.service.abstraction.AuthenticationService;
 import com.trescomas.service.abstraction.UserService;
@@ -23,7 +22,6 @@ import org.springframework.stereotype.Service;
 public class AuthenticationServiceImpl implements AuthenticationService {
 
     private final JwtTokenUtil jwtTokenUtil;
-    private final UserMapper userMapper;
     private final AuthenticationManager authenticationManager;
     private final UserService userService;
 
@@ -52,7 +50,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
         return ResponseEntity.ok()
                 .header(HttpHeaders.AUTHORIZATION, token)
-                .body(userMapper.map(user));
+                .build();
     }
 
 }
