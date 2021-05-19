@@ -4,6 +4,10 @@ plugins {
     id 'java'
 }
 
+configurations {
+    jar.archiveName = "hr-app-core.jar"
+}
+
 group = 'com.trescomas'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '16'
