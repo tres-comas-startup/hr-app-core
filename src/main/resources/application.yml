@@ -7,6 +7,10 @@ spring:
     rest:
       base-path: /api
       default-media-type: application/json
+      default-page-size: 10
+      max-page-size: 100
+      return-body-on-create: true
+      return-body-on-update: true
   jackson:
     visibility:
       field: any
