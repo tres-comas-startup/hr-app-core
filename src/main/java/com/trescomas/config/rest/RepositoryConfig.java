@@ -14,7 +14,7 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 @Slf4j
 @Configuration
 @RequiredArgsConstructor
-public class RestResourceConfig {
+public class RepositoryConfig {
 
     private final RepositoryRestConfiguration repositoryRestConfiguration;
 

@@ -1,8 +1,10 @@
 package com.trescomas.service.dataService.impl;
 
+import com.trescomas.domain.enums.RoleTitle;
 import com.trescomas.domain.model.Role;
 import com.trescomas.domain.model.User;
 import com.trescomas.repository.UserRepository;
+import com.trescomas.service.dataService.abstraction.RoleDataService;
 import com.trescomas.service.dataService.abstraction.UserDataService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -12,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Service
@@ -19,6 +22,7 @@ import java.util.Set;
 public class UserDataServiceImpl implements UserDataService {
 
     protected final UserRepository userRepository;
+    private final RoleDataService roleDataService;
 
     @Override
     public Long count() {
@@ -49,6 +53,20 @@ public class UserDataServiceImpl implements UserDataService {
     public boolean existsByUsername(String username) {
         log.debug("Check whether a user with username: {} exists", username);
         return userRepository.existsByUsername(username);
+    }
+
+    @Override
+    public void setRoles(User user, Set<RoleTitle> roleTitles) {
+        log.debug("Set roles: {} to user: ", roleTitles, user);
+        final var roles = roleTitles.stream()
+                .map(roleDataService::findByTitle)
+                .collect(Collectors.toSet());
+
+        if (user.getRoles() == null) {
+            user.setRoles(roles);
+        } else {
+            user.getRoles().addAll(roles);
+        }
     }
 
     @Transactional

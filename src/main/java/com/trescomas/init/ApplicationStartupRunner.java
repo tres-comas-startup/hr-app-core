@@ -1,6 +1,6 @@
 package com.trescomas.init;
 
-import com.trescomas.config.rest.RestResourceConfig;
+import com.trescomas.config.rest.RepositoryConfig;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationArguments;
@@ -12,11 +12,11 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class ApplicationStartupRunner implements ApplicationRunner {
 
-    private final RestResourceConfig restResourceConfig;
+    private final RepositoryConfig repositoryConfig;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        restResourceConfig.initProjections();
+        repositoryConfig.initProjections();
     }
 
 }

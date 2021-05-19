@@ -1,5 +1,6 @@
 package com.trescomas.service.dataService.abstraction;
 
+import com.trescomas.domain.enums.RoleTitle;
 import com.trescomas.domain.model.Role;
 import com.trescomas.domain.model.User;
 
@@ -14,4 +15,5 @@ public interface UserDataService extends DataService<User, Long> {
 
     boolean existsByUsername(@NotNull String username);
 
+    void setRoles(User user, Set<RoleTitle> roleTitles);
 }

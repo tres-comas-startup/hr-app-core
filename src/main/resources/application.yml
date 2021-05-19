@@ -3,10 +3,11 @@ spring:
     name: HR-App
   profiles:
     active: ${ACTIVE_PROFILES:'dev,h2'}
+  jpa:
+    open-in-view: false
   data:
     rest:
       base-path: /api
-      default-media-type: application/json
       default-page-size: 10
       max-page-size: 100
       return-body-on-create: true
@@ -24,4 +25,6 @@ logging:
       trescomas: trace
 
 hrapp:
-  jwtSecret: zdtlD3JK56m6wTTgsNFhqzjqP
+  jwt:
+    secret: ${JWT_SECRET:'zdtlD3JK56m6wTTgsNFhqzjqP'}
+    issuer: ${JWT_ISSUER:'hrapp.io'}

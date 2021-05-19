@@ -1,50 +1,43 @@
 package com.trescomas.config.security;
 
+import com.trescomas.config.properties.JwtProperties;
 import com.trescomas.domain.model.User;
 import io.jsonwebtoken.*;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
 import io.jsonwebtoken.security.SignatureException;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
 @Component
+@RequiredArgsConstructor
 public class JwtTokenUtil {
 
-    private final int ID_POSITION = 0;
-
-    private final int USERNAME_POSITION = 1;
-
     private final Logger log;
-
-    @Value("${hrapp.jwtSecret}")
-    private String jwtSecret;
-
-    @Value("${hrapp.jwtIssuer:hrapp.io}")
-    private String jwtIssuer;
-
-    public JwtTokenUtil(Logger log) {
-        this.log = log;
-    }
+    private final JwtProperties jwtProperties;
 
     public String generateAccessToken(User user) {
         log.debug("Generate access token for user: " + user.getUsername());
 
         return Jwts.builder()
                 .setSubject(String.format("%s,%s", user.getId(), user.getUsername()))
-                .setIssuer(jwtIssuer)
+                .setIssuer(jwtProperties.getIssuer())
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(appendOneWeek(System.currentTimeMillis())))
-                .signWith(SignatureAlgorithm.HS512, jwtSecret)
+                .signWith(Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtProperties.getSecret())))
                 .compact();
     }
 
     public String getUserId(String token) {
+        int ID_POSITION = 0;
         return getUserInfo(token, ID_POSITION);
     }
 
     public String getUsername(String token) {
+        int USERNAME_POSITION = 1;
         return getUserInfo(token, USERNAME_POSITION);
     }
 
@@ -82,7 +75,7 @@ public class JwtTokenUtil {
 
     private Jws<Claims> getJws(String token) {
         return Jwts.parserBuilder()
-                .setSigningKey(jwtSecret).build()
+                .setSigningKey(jwtProperties.getSecret()).build()
                 .parseClaimsJws(token);
     }
 

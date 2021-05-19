@@ -7,6 +7,7 @@ import javax.validation.constraints.NotNull;
 
 public record RegisterRequest(
         @NotNull @Email String username,
-        @NotNull @Min(6) @Max(25) String password,
-        @NotNull String fullName) {
+        @NotNull String password,
+        @NotNull String firstName,
+        @NotNull String lastName) {
 }

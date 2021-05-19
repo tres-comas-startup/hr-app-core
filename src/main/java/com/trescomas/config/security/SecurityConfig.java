@@ -3,6 +3,7 @@ package com.trescomas.config.security;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -101,6 +102,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         var corsConfig = new CorsConfiguration();
         corsConfig.setAllowCredentials(true);
         corsConfig.setAllowedOrigins(Constants.ALLOWED_ORIGINS);
+        corsConfig.addExposedHeader(HttpHeaders.LOCATION);
+        corsConfig.addExposedHeader(HttpHeaders.AUTHORIZATION);
         corsConfig.addAllowedHeader("*");
         corsConfig.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", corsConfig);
