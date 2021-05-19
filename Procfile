@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar build/libs/hr-app-core.jar
+web: java -Dserver.port=$PORT -jar build/libs/hr-app-core-0.0.1-SNAPSHOT.jar
