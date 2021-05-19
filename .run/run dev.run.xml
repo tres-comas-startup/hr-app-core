@@ -15,8 +15,7 @@
     <option name="DEBUG_MODE" value="true" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <option name="SHORTEN_COMMAND_LINE" value="NONE" />
-    <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndTriggerFile" />
-    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
     <envs>
       <env name="DB_USER" value="hrapp-user" />
       <env name="DB_PASSWORD" value="hrapp#1234" />
