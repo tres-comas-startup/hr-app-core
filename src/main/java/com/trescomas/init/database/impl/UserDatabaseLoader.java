@@ -33,7 +33,8 @@ public class UserDatabaseLoader extends AbstractDatabaseLoader<User, Long> {
 
         if (!userDataService.existsByUsername(SystemUsernames.ADMIN.getValue())) {
             final var savedUser = userDataService.create(
-                    "Системный администратор",
+                    "Системный",
+                    "Администратор",
                     SystemUsernames.ADMIN.getValue(),
                     "hradmin#12345",
                     Set.of(roleDataService.findByTitle(RoleTitle.ADMIN))
@@ -42,7 +43,8 @@ public class UserDatabaseLoader extends AbstractDatabaseLoader<User, Long> {
 
         if (!userDataService.existsByUsername(SystemUsernames.HR_MANAGER.getValue())) {
             userDataService.create(
-                    "Есьман Арина",
+                    "Арина",
+                    "Есьман",
                     SystemUsernames.HR_MANAGER.getValue(),
                     "hrhr#12345",
                     Set.of(roleDataService.findByTitle(RoleTitle.HR_MANAGER))

@@ -1,6 +1,6 @@
 package com.trescomas.config.security;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -26,17 +26,17 @@ import javax.servlet.http.HttpServletResponse;
         jsr250Enabled = true,
         prePostEnabled = true
 )
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final Logger log;
-    private final UserDetailsService userDetailsServiceImpl;
+    private final UserDetailsService userDetailsService;
     private final JwtTokenFilter jwtTokenFilter;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         log.debug("Start configure AuthenticationManagerBuilder");
-        auth.userDetailsService(userDetailsServiceImpl);
+        auth.userDetailsService(userDetailsService);
     }
 
     @Override

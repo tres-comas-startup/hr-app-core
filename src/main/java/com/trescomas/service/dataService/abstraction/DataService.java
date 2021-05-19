@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
-public interface DataService<ENTITY extends BaseEntity, ID extends Serializable> {
+public interface DataService<ENTITY extends BaseEntity<ID>, ID extends Serializable> {
 
     Long count();
 

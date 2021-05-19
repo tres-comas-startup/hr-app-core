@@ -1,10 +1,9 @@
 package com.trescomas.controller;
 
-import com.trescomas.assembler.UserModelAssembler;
 import com.trescomas.config.web.Routes;
+import com.trescomas.domain.assembler.UserModelAssembler;
 import com.trescomas.domain.dto.auth.LoginRequest;
 import com.trescomas.domain.dto.auth.RegisterRequest;
-import com.trescomas.domain.dto.user.UserView;
 import com.trescomas.service.abstraction.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import javax.validation.ValidationException;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -27,7 +25,7 @@ public class AuthenticationController {
     private final UserModelAssembler userModelAssembler;
 
     @PostMapping("login")
-    public ResponseEntity<UserView> login(@RequestBody @Valid LoginRequest request) {
+    public ResponseEntity<?> login(@RequestBody @Valid LoginRequest request) {
         return authenticationService.login(request);
     }
 

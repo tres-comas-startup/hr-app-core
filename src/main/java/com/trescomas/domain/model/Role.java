@@ -1,6 +1,5 @@
 package com.trescomas.domain.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.trescomas.domain.enums.RoleTitle;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -10,7 +9,6 @@ import org.springframework.security.core.GrantedAuthority;
 import javax.persistence.*;
 import java.util.Set;
 
-@JsonIgnoreProperties(value = {"authority"})
 @EqualsAndHashCode(callSuper = true, exclude = {"users"})
 @ToString(exclude = {"users"})
 @Data

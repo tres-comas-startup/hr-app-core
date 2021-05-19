@@ -1,4 +1,4 @@
-package com.trescomas.assembler;
+package com.trescomas.domain.assembler;
 
 import com.trescomas.domain.model.User;
 import org.springframework.hateoas.EntityModel;

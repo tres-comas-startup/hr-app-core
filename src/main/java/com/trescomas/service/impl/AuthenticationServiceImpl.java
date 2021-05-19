@@ -3,11 +3,8 @@ package com.trescomas.service.impl;
 import com.trescomas.config.security.JwtTokenUtil;
 import com.trescomas.domain.dto.auth.LoginRequest;
 import com.trescomas.domain.dto.auth.RegisterRequest;
-import com.trescomas.domain.dto.auth.UserCredentials;
-import com.trescomas.domain.dto.user.UserView;
 import com.trescomas.domain.model.User;
 import com.trescomas.service.abstraction.AuthenticationService;
-import com.trescomas.service.abstraction.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -23,25 +20,24 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     private final JwtTokenUtil jwtTokenUtil;
     private final AuthenticationManager authenticationManager;
-    private final UserService userService;
 
     @Override
-    public ResponseEntity<UserView> login(LoginRequest request) {
+    public ResponseEntity<?> login(LoginRequest request) {
         return authenticate(request);
     }
 
     @Override
-    public ResponseEntity<UserView> register(RegisterRequest request) {
-        return ResponseEntity.ok(userService.register(request));
+    public ResponseEntity<?> register(RegisterRequest request) {
+        return ResponseEntity.ok(null);
     }
 
-    private ResponseEntity<UserView> authenticate(UserCredentials userCredentials) {
-        log.debug("Authenticate credentials: {}", userCredentials);
+    private ResponseEntity<?> authenticate(LoginRequest request) {
+        log.debug("Authenticate login request: {}", request.username());
 
         final var authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
-                        userCredentials.username(),
-                        userCredentials.password()
+                        request.username(),
+                        request.password()
                 )
         );
 
