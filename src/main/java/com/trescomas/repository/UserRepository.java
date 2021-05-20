@@ -3,6 +3,7 @@ package com.trescomas.repository;
 import com.trescomas.domain.model.User;
 import com.trescomas.exception.ResourceNotFoundException;
 import com.trescomas.domain.projection.user.UserExcerptProjection;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import javax.validation.constraints.NotNull;
@@ -17,6 +18,9 @@ public interface UserRepository extends BaseRepository<User, Long> {
     }
 
     Optional<User> findByUsername(@NotNull String username);
+
+    @Query("from User u join fetch u.roles where u.username = ?1")
+    Optional<User> findByUsernameEager(String username);
 
     boolean existsByUsername(@NotNull String username);
 

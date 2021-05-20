@@ -6,6 +6,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
@@ -46,9 +47,11 @@ public class JwtTokenFilter extends OncePerRequestFilter {
         }
 
         // Get user identity and set it on the spring security context
+        final var username = jwtTokenUtil.getUsername(token);
         UserDetails userDetails = userRepository
-                .findByUsername(jwtTokenUtil.getUsername(token))
-                .orElse(null);
+                .findByUsernameEager(username)
+                .orElseThrow(() -> new UsernameNotFoundException(String
+                        .format("No such user with username: %s", username)));
 
         UsernamePasswordAuthenticationToken authentication =
                 new UsernamePasswordAuthenticationToken(
