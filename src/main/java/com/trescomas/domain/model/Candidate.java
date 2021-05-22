@@ -17,7 +17,7 @@ import java.util.Set;
 @Data
 @Entity
 @Table(name = "candidates")
-public class Candidate extends BaseEntity<Long> {
+public class Candidate extends EducationInfo {
 
     @Column(nullable = false)
     private LocalDate birthDate;
@@ -54,15 +54,5 @@ public class Candidate extends BaseEntity<Long> {
 
     @OneToMany(mappedBy = "candidate")
     private List<CandidateReview> reviews;
-
-    public Candidate addTechnology(Technology technology) {
-        this.technologies.add(technology);
-        return this;
-    }
-
-    public Candidate addTechnologies(Set<Technology> technologies) {
-        this.technologies.addAll(technologies);
-        return this;
-    }
 
 }
