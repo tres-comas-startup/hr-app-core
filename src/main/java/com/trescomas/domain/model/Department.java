@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,7 +17,7 @@ public class Department extends BaseEntity<Long> {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "department_id")
+    @JoinColumn(name = "department_type_id")
     private DepartmentType departmentType;
 
     @ManyToMany
@@ -30,14 +29,5 @@ public class Department extends BaseEntity<Long> {
 
     @OneToMany(mappedBy = "department")
     private Set<Worker> workers = new HashSet<>();
-
-    public Department addTechnologies(Technology... technologies) {
-        this.technologies.addAll(Arrays.asList(technologies));
-        return this;
-    }
-
-    public Department addWorkers(Worker... workers) {
-        this.workers.addAll(Arrays.asList(workers));
-        return this;
-    }
+    
 }
