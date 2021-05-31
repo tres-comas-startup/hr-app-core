@@ -1,437 +1,1197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>/Users/glebremniov/dev/projects/hr-app/hr-app-core/src/main/java</OriginalElement>
+  <OriginalElement>/Users/glebremniov/dev/projects/hr-app/hr-app-core</OriginalElement>
   <nodes>
-    <node x="3118.8169642857138" y="1081.0">com.trescomas.service.dataService.impl.UserDataServiceImpl</node>
-    <node x="4279.0" y="1819.0">com.trescomas.Application</node>
-    <node x="7707.0" y="1414.0">com.trescomas.domain.enums.ReviewStatementTitle</node>
-    <node x="245.5" y="677.0">com.trescomas.domain.model.Candidate</node>
-    <node x="995.9999999999995" y="348.0">com.trescomas.domain.model.CandidateReview</node>
-    <node x="7181.625" y="810.0">com.trescomas.repository.WorkerRepository</node>
-    <node x="263.0" y="370.5">com.trescomas.domain.model.EducationInfo</node>
-    <node x="9741.0" y="1414.0">com.trescomas.config.rest.RepositoryConfig</node>
-    <node x="6010.0" y="1414.0">com.trescomas.domain.enums.DepartmentTypeTitle</node>
-    <node x="5122.125" y="1070.0">com.trescomas.service.dataService.impl.RoleDataServiceImpl</node>
-    <node x="4491.0" y="1819.0">com.trescomas.domain.projection.user.UsernameWithPasswordProjection</node>
-    <node x="3436.0" y="1819.0">com.trescomas.domain.assembler.UserModelAssembler</node>
-    <node x="2490.7499999999995" y="743.0">com.trescomas.service.impl.BaseDataService</node>
-    <node x="3924.7499999999995" y="788.0">com.trescomas.service.dataService.abstraction.UserDataService</node>
-    <node x="2246.0" y="1414.0">com.trescomas.service.abstraction.DateTimeService</node>
-    <node x="2889.0" y="1819.0">com.trescomas.config.properties.JwtProperties</node>
-    <node x="4345.0" y="0.0">com.trescomas.domain.model.BaseEntity</node>
-    <node x="3095.0" y="1819.0">com.trescomas.config.JpaAuditingConfig</node>
-    <node x="0.0" y="1541.0">com.trescomas.service.impl.AuthenticationServiceImpl</node>
-    <node x="2085.0" y="1819.0">com.trescomas.config.json.serializer.LocalDateDeserializer</node>
-    <node x="9822.441964285714" y="381.0">com.trescomas.init.database.abstraction.AbstractDatabaseLoader</node>
-    <node x="3937.0" y="1414.0">com.trescomas.domain.dto.auth.RegisterRequest</node>
-    <node x="6376.625" y="821.0">com.trescomas.repository.DepartmentTypeRepository</node>
-    <node x="2580.0" y="1596.0">com.trescomas.exception.CandidateNotFoundException</node>
-    <node x="701.0" y="1414.0">com.trescomas.config.security.JwtTokenUtil</node>
-    <node x="2085.9999999999995" y="315.0">com.trescomas.domain.model.Worker</node>
-    <node x="1242.9999999999995" y="337.0">com.trescomas.domain.model.Technology</node>
-    <node x="0.0" y="1819.0">com.trescomas.service.impl.UserDetailsServiceImpl</node>
-    <node x="10015.441964285714" y="77.5">com.trescomas.init.database.abstraction.DatabaseLoader</node>
-    <node x="179.0" y="1414.0">com.trescomas.service.abstraction.AuthenticationService</node>
-    <node x="10203.625" y="787.0">com.trescomas.init.database.impl.UserDatabaseLoader</node>
-    <node x="3940.959821428571" y="371.0">com.trescomas.service.dataService.abstraction.DataService</node>
-    <node x="1622.0" y="1819.0">com.trescomas.config.json.serializer.LocalDateSerializer</node>
-    <node x="0.0" y="260.0">com.trescomas.domain.model.User</node>
-    <node x="351.0" y="1819.0">com.trescomas.config.security.Constants</node>
-    <node x="3237.7499999999995" y="743.0">com.trescomas.service.dataService.impl.TechnologyDataService</node>
-    <node x="9889.625" y="798.0">com.trescomas.init.database.impl.RoleDatabaseLoader</node>
-    <node x="497.0" y="348.0">com.trescomas.domain.model.WorkerPosition</node>
-    <node x="1461.0" y="1618.0">com.trescomas.domain.projection.role.TitleWithUsersProjection</node>
-    <node x="5868.625" y="799.0">com.trescomas.repository.DepartmentRepository</node>
-    <node x="4023.0" y="1819.0">com.trescomas.config.LoggerConfig</node>
-    <node x="1716.5" y="1414.0">com.trescomas.domain.projection.BaseProjection</node>
-    <node x="1975.0" y="1629.0">com.trescomas.domain.projection.role.RoleExcerptProjection</node>
-    <node x="8037.0" y="1414.0">com.trescomas.domain.enums.EducationType</node>
-    <node x="6824.625" y="788.0">com.trescomas.repository.UserRepository</node>
-    <node x="1727.0" y="1607.0">com.trescomas.domain.projection.user.UserExcerptProjection</node>
-    <node x="1028.0" y="1587.0">com.trescomas.init.database.impl.DatabaseLoaderManagerImpl</node>
-    <node x="8899.0" y="1414.0">com.trescomas.domain.dto.auth.LoginRequest</node>
-    <node x="2318.9999999999995" y="348.0">com.trescomas.domain.model.ReviewStatement</node>
-    <node x="3467.0" y="1414.0">com.trescomas.config.security.SecurityConfig</node>
-    <node x="2282.0" y="1608.0">com.trescomas.service.impl.DateTimeServiceImpl</node>
-    <node x="8366.625" y="821.0">com.trescomas.repository.CandidateReviewRepository</node>
-    <node x="8029.625" y="821.0">com.trescomas.repository.TechnologyRepository</node>
-    <node x="4347.125" y="799.0">com.trescomas.service.dataService.abstraction.ReviewStatementDataService</node>
-    <node x="2886.0" y="1585.0">com.trescomas.exception.RoleNotFoundException</node>
-    <node x="5699.0" y="1414.0">com.trescomas.domain.enums.SystemUsernames</node>
-    <node x="1508.9999999999995" y="304.0">com.trescomas.domain.model.Department</node>
-    <node x="5407.625" y="810.0">com.trescomas.repository.ReviewStatementRepository</node>
-    <node x="3743.0" y="1819.0">com.trescomas.domain.mapper.UserMapper</node>
-    <node x="5451.0" y="1414.0">com.trescomas.domain.enums.RoleTitle</node>
-    <node x="1852.9999999999995" y="337.0">com.trescomas.domain.model.Role</node>
-    <node x="5144.625" y="788.0">com.trescomas.service.dataService.abstraction.RoleDataService</node>
-    <node x="8876.625" y="821.0">com.trescomas.repository.CandidateRepository</node>
-    <node x="8575.0" y="1414.0">com.trescomas.domain.enums.CandidateStatusTitle</node>
-    <node x="9176.0" y="1414.0">com.trescomas.config.security.JwtTokenFilter</node>
-    <node x="7427.125" y="382.0">com.trescomas.repository.BaseRepository</node>
-    <node x="10194.0" y="1414.0">com.trescomas.init.ApplicationStartupRunner</node>
-    <node x="2861.7499999999995" y="743.0">com.trescomas.service.dataService.impl.DepartmentDataService</node>
-    <node x="8322.0" y="1414.0">com.trescomas.config.web.Routes</node>
-    <node x="9112.625" y="810.0">com.trescomas.repository.RoleRepository</node>
-    <node x="9410.625" y="798.0">com.trescomas.init.database.impl.ReviewStatementDatabaseLoaded</node>
-    <node x="2539.0" y="1819.0">com.trescomas.utils.StringUtils</node>
-    <node x="4741.125" y="1114.0">com.trescomas.service.dataService.impl.CandidateDataServiceImpl</node>
-    <node x="7598.625" y="821.0">com.trescomas.repository.WorkerPositionRepository</node>
-    <node x="6334.0" y="1414.0">com.trescomas.config.json.ObjectMapperConfig</node>
-    <node x="4322.0" y="1414.0">com.trescomas.domain.enums.WorkerPositionTitle</node>
-    <node x="649.0" y="1819.0">com.trescomas.config.json.serializer.LocalDateTimeSerializer</node>
-    <node x="3171.0" y="1585.0">com.trescomas.exception.UserNotFoundException</node>
-    <node x="4808.125" y="833.5">com.trescomas.service.dataService.abstraction.CandidateDataService</node>
-    <node x="4637.0" y="1414.0">com.trescomas.config.web.ErrorHandler</node>
-    <node x="7164.0" y="1414.0">com.trescomas.controller.AuthenticationController</node>
-    <node x="1071.5" y="1414.0">com.trescomas.init.database.abstraction.DatabaseLoaderManager</node>
-    <node x="1140.0" y="1819.0">com.trescomas.config.json.serializer.LocalDateTimeDeserializer</node>
-    <node x="3608.7499999999995" y="743.0">com.trescomas.service.dataService.impl.WorkerDataService</node>
-    <node x="730.0" y="348.0">com.trescomas.domain.model.DepartmentType</node>
-    <node x="4857.0" y="1819.0">com.trescomas.init.database.constants.LoadOrder</node>
-    <node x="2819.5" y="1414.0">com.trescomas.exception.ResourceNotFoundException</node>
-    <node x="4232.375" y="1147.0">com.trescomas.service.dataService.impl.ReviewStatementDataServiceImpl</node>
+    <node x="5348.011904761905" y="21.5">com.trescomas.domain.enums.ReviewStatementTitle</node>
+    <node x="5367.466666666667" y="982.0">com.trescomas.domain.model.Candidate</node>
+    <node x="5301.145238095239" y="611.0">com.trescomas.domain.model.CandidateReview</node>
+    <node x="5545.145238095239" y="633.5">com.trescomas.domain.model.EducationInfo</node>
+    <node x="6759.0" y="3133.0">com.trescomas.domain.projection.user.UsernameWithPasswordProjection</node>
+    <node x="6655.269054180741" y="2426.0">com.trescomas.service.impl.BaseDataService</node>
+    <node x="1679.5833333333335" y="1750.5">com.trescomas.config.properties.JwtProperties</node>
+    <node x="5935.0" y="3133.0">com.trescomas.config.JpaAuditingConfig</node>
+    <node x="9351.561100487434" y="2470.0">com.trescomas.init.database.abstraction.AbstractDatabaseLoader</node>
+    <node x="237.0" y="3327.0">com.trescomas.config.json.serializer.LocalDateDeserializer</node>
+    <node x="2505.0" y="3133.0">com.trescomas.domain.dto.auth.RegisterRequest</node>
+    <node x="4174.233339895027" y="2144.0">com.trescomas.exception.CandidateNotFoundException</node>
+    <node x="5036.233339895027" y="2044.0">com.trescomas.domain.model.Worker</node>
+    <node x="9891.653568616435" y="2144.0">com.trescomas.init.database.abstraction.DatabaseLoader</node>
+    <node x="5938.0690476190475" y="2877.0">com.trescomas.init.database.impl.UserDatabaseLoader</node>
+    <node x="2311.4315476190477" y="523.0">com.trescomas.domain.model.User</node>
+    <node x="9727.610714285714" y="2888.0">com.trescomas.init.database.impl.RoleDatabaseLoader</node>
+    <node x="3752.233339895027" y="1762.0">com.trescomas.domain.projection.role.TitleWithUsersProjection</node>
+    <node x="5015.6861004874345" y="2437.0">com.trescomas.domain.model.WorkerPosition</node>
+    <node x="6039.769054180741" y="2122.0">com.trescomas.repository.DepartmentRepository</node>
+    <node x="6276.0" y="3133.0">com.trescomas.config.LoggerConfig</node>
+    <node x="2593.8958333333335" y="1423.0">com.trescomas.domain.projection.BaseProjection</node>
+    <node x="2275.0761876640554" y="2111.0">com.trescomas.repository.UserRepository</node>
+    <node x="5325.8452380952385" y="270.0">com.trescomas.domain.model.ReviewStatement</node>
+    <node x="8185.769054180741" y="2144.0">com.trescomas.repository.CandidateReviewRepository</node>
+    <node x="1185.0" y="2822.0">com.trescomas.config.security.SecurityConfig</node>
+    <node x="8736.435720847407" y="2482.0">com.trescomas.service.dataService.abstraction.ReviewStatementDataService</node>
+    <node x="5068.159520997389" y="1684.0">com.trescomas.domain.model.Department</node>
+    <node x="7387.769054180741" y="2133.0">com.trescomas.repository.ReviewStatementRepository</node>
+    <node x="780.5" y="1114.5">com.trescomas.domain.mapper.UserMapper</node>
+    <node x="1135.0" y="2470.0">com.trescomas.config.security.JwtTokenFilter</node>
+    <node x="6532.0" y="3133.0">com.trescomas.utils.StringUtilsTest</node>
+    <node x="6091.911093925742" y="1740.0">com.trescomas.repository.BaseRepository</node>
+    <node x="2090.5" y="3306.0">com.trescomas.init.ApplicationStartupRunner</node>
+    <node x="4011.0" y="3133.0">com.trescomas.config.web.Routes</node>
+    <node x="7306.0" y="3133.0">com.trescomas.repository.package-info</node>
+    <node x="7570.236901949769" y="2833.0">com.trescomas.service.dataService.impl.CandidateDataServiceImpl</node>
+    <node x="5161.0" y="3133.0">com.trescomas.utils.StringUtils</node>
+    <node x="4480.233339895027" y="2133.0">com.trescomas.exception.UserNotFoundException</node>
+    <node x="5267.233339895027" y="2055.0">com.trescomas.domain.enums.WorkerPositionTitle</node>
+    <node x="7022.269054180741" y="2516.5">com.trescomas.service.dataService.abstraction.CandidateDataService</node>
+    <node x="2886.0" y="3133.0">com.trescomas.config.web.ErrorHandler</node>
+    <node x="10083.610714285714" y="2470.0">com.trescomas.init.database.abstraction.DatabaseLoaderManager</node>
+    <node x="0.0" y="2855.0">com.trescomas.controller.AuthenticationController</node>
+    <node x="4953.018246156713" y="2833.0">com.trescomas.service.dataService.impl.WorkerDataService</node>
+    <node x="4979.020238095239" y="1400.0">com.trescomas.domain.model.DepartmentType</node>
+    <node x="3141.4511876640554" y="1740.0">com.trescomas.exception.ResourceNotFoundException</node>
+    <node x="8576.153568616435" y="2866.0">com.trescomas.service.dataService.impl.ReviewStatementDataServiceImpl</node>
+    <node x="7507.0" y="3133.0">com.trescomas.exception.package-info</node>
+    <node x="2989.143246156713" y="2800.0">com.trescomas.service.dataService.impl.UserDataServiceImpl</node>
+    <node x="2088.0761876640554" y="2132.5">com.trescomas.Application</node>
+    <node x="5482.144054180741" y="2493.0">com.trescomas.repository.WorkerRepository</node>
+    <node x="2052.0" y="3133.0">com.trescomas.config.rest.RepositoryConfig</node>
+    <node x="5001.145238095239" y="1059.0">com.trescomas.domain.enums.DepartmentTypeTitle</node>
+    <node x="1886.359912823379" y="2789.0">com.trescomas.service.dataService.impl.RoleDataServiceImpl</node>
+    <node x="3891.233339895027" y="1114.5">com.trescomas.domain.assembler.UserModelAssembler</node>
+    <node x="2608.0833333333335" y="2471.0">com.trescomas.service.dataService.abstraction.UserDataService</node>
+    <node x="592.5" y="3133.0">com.trescomas.service.abstraction.DateTimeService</node>
+    <node x="4902.895238095239" y="0.0">com.trescomas.domain.model.BaseEntity</node>
+    <node x="514.0" y="2822.0">com.trescomas.service.impl.AuthenticationServiceImpl</node>
+    <node x="5511.0" y="3133.0">settings</node>
+    <node x="5591.769054180741" y="2144.0">com.trescomas.repository.DepartmentTypeRepository</node>
+    <node x="1208.1861004874345" y="2011.0">com.trescomas.config.security.JwtTokenUtil</node>
+    <node x="5323.404166666667" y="1389.0">com.trescomas.domain.model.Technology</node>
+    <node x="2282.0833333333335" y="2470.0">com.trescomas.service.impl.UserDetailsServiceImpl</node>
+    <node x="383.4361004874345" y="2493.0">com.trescomas.service.abstraction.AuthenticationService</node>
+    <node x="6601.1023875140745" y="2100.0">com.trescomas.service.dataService.abstraction.DataService</node>
+    <node x="1589.0" y="3327.0">com.trescomas.config.json.serializer.LocalDateSerializer</node>
+    <node x="4863.0" y="3133.0">com.trescomas.config.security.Constants</node>
+    <node x="8022.768246156713" y="2426.0">com.trescomas.service.dataService.impl.TechnologyDataService</node>
+    <node x="2605.3958333333335" y="1773.0">com.trescomas.domain.projection.role.RoleExcerptProjection</node>
+    <node x="5597.395238095239" y="281.0">com.trescomas.domain.enums.EducationType</node>
+    <node x="2211.2083333333335" y="1751.0">com.trescomas.domain.projection.user.UserExcerptProjection</node>
+    <node x="10041.610714285714" y="2876.5">com.trescomas.init.database.impl.DatabaseLoaderManagerImpl</node>
+    <node x="4588.0" y="3133.0">com.trescomas.domain.dto.auth.LoginRequest</node>
+    <node x="0.0" y="3350.0">com.trescomas.service.impl.DateTimeServiceImpl</node>
+    <node x="7848.769054180741" y="2144.0">com.trescomas.repository.TechnologyRepository</node>
+    <node x="4751.233339895027" y="2133.0">com.trescomas.exception.RoleNotFoundException</node>
+    <node x="3700.0" y="3133.0">com.trescomas.domain.enums.SystemUsernames</node>
+    <node x="1978.9361004874345" y="1389.0">com.trescomas.domain.model.Role</node>
+    <node x="2094.9361004874345" y="1048.0">com.trescomas.domain.enums.RoleTitle</node>
+    <node x="7708.0" y="3133.0">com.trescomas.utils.package-info</node>
+    <node x="3680.983339895027" y="2471.0">com.trescomas.service.dataService.abstraction.RoleDataService</node>
+    <node x="4264.0" y="3133.0">com.trescomas.domain.enums.CandidateStatusTitle</node>
+    <node x="7151.769054180741" y="2144.0">com.trescomas.repository.CandidateRepository</node>
+    <node x="5899.144054180741" y="2426.0">com.trescomas.service.dataService.impl.DepartmentDataService</node>
+    <node x="1781.5833333333335" y="2133.0">com.trescomas.repository.RoleRepository</node>
+    <node x="7909.0" y="3133.0">com.trescomas.service.package-info</node>
+    <node x="9248.610714285714" y="2888.0">com.trescomas.init.database.impl.ReviewStatementDatabaseLoaded</node>
+    <node x="3640.643246156713" y="2911.0">com.trescomas.repository.WorkerPositionRepository</node>
+    <node x="712.5384615384617" y="3478.0">com.trescomas.config.json.ObjectMapperConfig</node>
+    <node x="666.0" y="3327.0">com.trescomas.config.json.serializer.LocalDateTimeSerializer</node>
+    <node x="5723.0" y="3133.0">build</node>
+    <node x="1132.0" y="3327.0">com.trescomas.config.json.serializer.LocalDateTimeDeserializer</node>
+    <node x="7125.0" y="3133.0">com.trescomas.init.database.constants.LoadOrder</node>
+    <node x="8110.0" y="3133.0">com.trescomas.init.database.package-info</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.trescomas.service.impl.BaseDataService" target="com.trescomas.domain.model.BaseEntity" relationship="DEPENDENCY">
-      <point x="-87.75" y="-105.5" />
-      <point x="2578.4999999999995" y="240.0" />
-      <point x="5467.499999999999" y="240.0" />
-      <point x="5467.499999999999" y="230.0" />
-      <point x="4534.0" y="230.0" />
-      <point x="63.0" y="105.0" />
-    </edge>
-    <edge source="com.trescomas.repository.DepartmentTypeRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-27.5" />
-      <point x="6590.625" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
-    </edge>
-    <edge source="com.trescomas.service.dataService.impl.RoleDataServiceImpl" target="com.trescomas.service.dataService.abstraction.RoleDataService" relationship="REALIZATION">
-      <point x="0.0" y="-149.5" />
-      <point x="0.0" y="60.5" />
+    <edge source="com.trescomas.domain.model.Role" target="com.trescomas.domain.enums.RoleTitle" relationship="DEPENDENCY">
+      <point x="60.28571428571422" y="-105.5" />
+      <point x="2144.7218147731487" y="1357.0" />
+      <point x="2247.1861004874345" y="1357.0" />
+      <point x="50.75" y="105.5" />
     </edge>
     <edge source="com.trescomas.init.database.impl.DatabaseLoaderManagerImpl" target="com.trescomas.init.database.abstraction.DatabaseLoaderManager" relationship="REALIZATION">
       <point x="0.0" y="-62.0" />
       <point x="0.0" y="61.5" />
     </edge>
-    <edge source="com.trescomas.service.dataService.abstraction.DataService" target="com.trescomas.domain.model.BaseEntity" relationship="DEPENDENCY">
-      <point x="-4.547473508864641E-13" y="-71.5" />
-      <point x="4066.4598214285706" y="240.0" />
-      <point x="5467.499999999999" y="240.0" />
-      <point x="5467.499999999999" y="230.0" />
-      <point x="4534.0" y="230.0" />
-      <point x="63.0" y="105.0" />
-    </edge>
-    <edge source="com.trescomas.service.dataService.impl.ReviewStatementDataServiceImpl" target="com.trescomas.service.dataService.abstraction.ReviewStatementDataService" relationship="REALIZATION">
-      <point x="111.75" y="-72.5" />
+    <edge source="com.trescomas.repository.UserRepository" target="com.trescomas.domain.projection.user.UserExcerptProjection" relationship="DEPENDENCY">
+      <point x="-126.375" y="-60.5" />
+      <point x="2317.2011876640554" y="1969.0" />
+      <point x="2325.2083333333335" y="1969.0" />
       <point x="0.0" y="49.5" />
     </edge>
-    <edge source="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" target="com.trescomas.domain.model.BaseEntity" relationship="DEPENDENCY">
-      <point x="-94.5" y="-61.5" />
-      <point x="9916.941964285714" y="240.0" />
-      <point x="5467.499999999999" y="240.0" />
-      <point x="5467.499999999999" y="230.0" />
-      <point x="4534.0" y="230.0" />
-      <point x="63.0" y="105.0" />
+    <edge source="com.trescomas.config.security.JwtTokenFilter" target="com.trescomas.repository.UserRepository" relationship="TO_ONE">
+      <point x="130.0" y="-61.5" />
+      <point x="1525.0" y="2404.0" />
+      <point x="2443.5761876640554" y="2404.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.abstraction.DataService" target="com.trescomas.domain.model.BaseEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-71.5" />
+      <point x="6726.6023875140745" y="250.0" />
+      <point x="6823.7773809523815" y="250.0" />
+      <point x="6823.7773809523815" y="230.0" />
+      <point x="5089.645238095239" y="230.0" />
+      <point x="62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.CandidateDataServiceImpl" target="com.trescomas.domain.model.Candidate" relationship="DEPENDENCY">
+      <point x="119.33333333333303" y="-105.5" />
+      <point x="7868.570235283103" y="2738.0" />
+      <point x="8725.935720847407" y="2738.0" />
+      <point x="8725.935720847407" y="1367.0" />
+      <point x="7265.269054180741" y="1367.0" />
+      <point x="7265.269054180741" y="1357.0" />
+      <point x="5583.591666666667" y="1357.0" />
+      <point x="92.625" y="171.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="-105.85714285714312" y="-171.5" />
+      <point x="5385.109523809524" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.config.json.serializer.LocalDateDeserializer" target="com.trescomas.service.abstraction.DateTimeService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="441.5" y="3307.0" />
+      <point x="1119.75" y="3307.0" />
+      <point x="1119.75" y="3297.0" />
+      <point x="809.25" y="3297.0" />
+      <point x="72.25" y="72.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.Worker" relationship="TO_MANY">
+      <point x="0.0" y="116.5" />
+      <point x="5198.659520997389" y="1969.0" />
+      <point x="5194.483339895027" y="1969.0" />
+      <point x="52.75" y="-127.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.ReviewStatementDataServiceImpl" target="com.trescomas.service.dataService.abstraction.ReviewStatementDataService" relationship="REALIZATION">
+      <point x="0.0" y="-72.5" />
+      <point x="8799.653568616435" y="2728.0" />
+      <point x="8956.935720847407" y="2728.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.Department" relationship="DEPENDENCY">
+      <point x="87.91666666666697" y="-127.5" />
+      <point x="5229.650006561694" y="1989.0" />
+      <point x="5395.111093925741" y="1989.0" />
+      <point x="5395.111093925741" y="1969.0" />
+      <point x="5285.659520997389" y="1969.0" />
+      <point x="87.0" y="116.5" />
     </edge>
     <edge source="com.trescomas.service.impl.DateTimeServiceImpl" target="com.trescomas.service.abstraction.DateTimeService" relationship="REALIZATION">
       <point x="0.0" y="-27.5" />
-      <point x="0.0" y="72.0" />
+      <point x="108.5" y="3297.0" />
+      <point x="664.75" y="3297.0" />
+      <point x="-72.25" y="72.0" />
     </edge>
-    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-94.5" />
-      <point x="2443.4999999999995" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
+    <edge source="com.trescomas.service.dataService.impl.WorkerDataService" target="com.trescomas.repository.WorkerRepository" relationship="TO_ONE">
+      <point x="-97.66666666666606" y="-105.5" />
+      <point x="5001.851579490047" y="2718.0" />
+      <point x="5680.644054180741" y="2718.0" />
+      <point x="0.0" y="38.5" />
     </edge>
-    <edge source="com.trescomas.repository.CandidateReviewRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-27.5" />
-      <point x="8611.625" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
+    <edge source="com.trescomas.service.dataService.abstraction.RoleDataService" target="com.trescomas.domain.model.Role" relationship="DEPENDENCY">
+      <point x="-60.75" y="-60.5" />
+      <point x="3741.733339895027" y="1662.0" />
+      <point x="2084.4361004874345" y="1662.0" />
+      <point x="0.0" y="105.5" />
     </edge>
-    <edge source="com.trescomas.repository.CandidateRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-27.5" />
-      <point x="8984.625" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="-87.91666666666697" y="-127.5" />
+      <point x="5053.81667322836" y="1969.0" />
+      <point x="4507.4702380952385" y="1969.0" />
+      <point x="4507.4702380952385" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
     </edge>
-    <edge source="com.trescomas.service.dataService.abstraction.CandidateDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-15.0" />
-      <point x="4921.625" y="656.0" />
-      <point x="4744.625" y="656.0" />
-      <point x="4744.625" y="646.0" />
-      <point x="4129.209821428571" y="646.0" />
-      <point x="62.749999999999545" y="71.5" />
-    </edge>
-    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.EducationInfo" relationship="GENERALIZATION">
-      <point x="0.0" y="-171.5" />
-      <point x="0.0" y="72.0" />
-    </edge>
-    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-94.5" />
-      <point x="1109.4999999999995" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
-    </edge>
-    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-138.5" />
-      <point x="1670.9999999999995" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
-    </edge>
-    <edge source="com.trescomas.service.dataService.abstraction.RoleDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-60.5" />
-      <point x="5266.125" y="656.0" />
-      <point x="4744.625" y="656.0" />
-      <point x="4744.625" y="646.0" />
-      <point x="4129.209821428571" y="646.0" />
-      <point x="62.749999999999545" y="71.5" />
-    </edge>
-    <edge source="com.trescomas.repository.WorkerRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-38.5" />
-      <point x="7380.125" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
-    </edge>
-    <edge source="com.trescomas.exception.UserNotFoundException" target="com.trescomas.exception.ResourceNotFoundException" relationship="GENERALIZATION">
-      <point x="0.0" y="-38.5" />
-      <point x="3296.5" y="1560.0" />
-      <point x="3018.5" y="1560.0" />
-      <point x="0.0" y="60.5" />
-    </edge>
-    <edge source="com.trescomas.repository.DepartmentRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-49.5" />
-      <point x="6112.625" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
-    </edge>
-    <edge source="com.trescomas.init.database.impl.UserDatabaseLoader" target="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" relationship="GENERALIZATION">
-      <point x="0.0" y="-61.5" />
-      <point x="10407.125" y="656.0" />
-      <point x="10011.441964285714" y="656.0" />
+    <edge source="com.trescomas.config.security.SecurityConfig" target="com.trescomas.config.security.JwtTokenFilter" relationship="TO_ONE">
+      <point x="0.0" y="-116.5" />
       <point x="0.0" y="61.5" />
     </edge>
-    <edge source="com.trescomas.service.dataService.abstraction.UserDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-60.5" />
-      <point x="4111.75" y="656.0" />
-      <point x="4744.625" y="656.0" />
-      <point x="4744.625" y="646.0" />
-      <point x="4129.209821428571" y="646.0" />
-      <point x="62.749999999999545" y="71.5" />
+    <edge source="com.trescomas.domain.model.WorkerPosition" target="com.trescomas.domain.enums.WorkerPositionTitle" relationship="TO_ONE">
+      <point x="60.285714285714675" y="-94.5" />
+      <point x="5181.471814773149" y="2374.0" />
+      <point x="5469.733339895027" y="2374.0" />
+      <point x="67.5" y="116.5" />
     </edge>
-    <edge source="com.trescomas.exception.CandidateNotFoundException" target="com.trescomas.exception.ResourceNotFoundException" relationship="GENERALIZATION">
-      <point x="0.0" y="-27.5" />
-      <point x="2723.0" y="1560.0" />
-      <point x="3018.5" y="1560.0" />
-      <point x="0.0" y="60.5" />
+    <edge source="com.trescomas.config.json.ObjectMapperConfig" target="com.trescomas.config.json.serializer.LocalDateTimeSerializer" relationship="TO_ONE">
+      <point x="-97.5" y="-83.5" />
+      <point x="1005.0384615384617" y="3453.0" />
+      <point x="889.0" y="3453.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.ReviewStatementDataServiceImpl" target="com.trescomas.domain.model.ReviewStatement" relationship="DEPENDENCY">
+      <point x="149.0" y="-72.5" />
+      <point x="8948.653568616435" y="2738.0" />
+      <point x="9341.061100487434" y="2738.0" />
+      <point x="9341.061100487434" y="501.0" />
+      <point x="8331.610714285714" y="501.0" />
+      <point x="8331.610714285714" y="481.0" />
+      <point x="5541.9702380952385" y="481.0" />
+      <point x="92.625" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.WorkerPosition" relationship="DEPENDENCY">
+      <point x="26.375" y="127.5" />
+      <point x="5168.108339895027" y="2354.0" />
+      <point x="5121.1861004874345" y="2354.0" />
+      <point x="0.0" y="-94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.WorkerPosition" target="com.trescomas.domain.model.Worker" relationship="DEPENDENCY">
+      <point x="90.42857142857156" y="-94.5" />
+      <point x="5211.614671916006" y="2404.0" />
+      <point x="5718.768246156713" y="2404.0" />
+      <point x="5718.768246156713" y="2354.0" />
+      <point x="5220.858339895027" y="2354.0" />
+      <point x="79.125" y="127.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.EducationInfo" relationship="GENERALIZATION">
+      <point x="70.57142857142844" y="-171.5" />
+      <point x="5561.538095238096" y="950.0" />
+      <point x="5652.145238095239" y="950.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Role" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-105.5" />
+      <point x="2084.4361004874345" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.User" target="com.trescomas.domain.model.Role" relationship="DEPENDENCY">
+      <point x="-30.375" y="182.5" />
+      <point x="2402.5565476190477" y="940.0" />
+      <point x="1878.3843082114554" y="940.0" />
+      <point x="1878.3843082114554" y="1347.0" />
+      <point x="2054.293243344577" y="1347.0" />
+      <point x="-30.142857142857338" y="-105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-104.39999999999964" y="-116.5" />
+      <point x="5094.25952099739" y="1642.0" />
+      <point x="4965.145238095239" y="1642.0" />
+      <point x="-62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.TechnologyDataService" target="com.trescomas.repository.TechnologyRepository" relationship="TO_ONE">
+      <point x="0.0" y="-105.5" />
+      <point x="8196.268246156713" y="2374.0" />
+      <point x="8007.269054180741" y="2374.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.model.Department" relationship="DEPENDENCY">
+      <point x="-30.375" y="94.5" />
+      <point x="5070.145238095239" y="1652.0" />
+      <point x="5059.07559242596" y="1652.0" />
+      <point x="5059.07559242596" y="1662.0" />
+      <point x="5198.659520997389" y="1662.0" />
+      <point x="0.0" y="-116.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.Candidate" relationship="DEPENDENCY">
+      <point x="-28.0" y="94.5" />
+      <point x="5385.145238095239" y="930.0" />
+      <point x="5490.966666666667" y="930.0" />
+      <point x="0.0" y="-171.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.CandidateReview" relationship="DEPENDENCY">
+      <point x="105.85714285714312" y="-171.5" />
+      <point x="5596.82380952381" y="960.0" />
+      <point x="5649.51309242596" y="960.0" />
+      <point x="5649.51309242596" y="910.0" />
+      <point x="5497.145238095239" y="910.0" />
+      <point x="84.0" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.config.json.serializer.LocalDateTimeDeserializer" target="com.trescomas.service.abstraction.DateTimeService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="1350.5" y="3307.0" />
+      <point x="1119.75" y="3307.0" />
+      <point x="1119.75" y="3297.0" />
+      <point x="809.25" y="3297.0" />
+      <point x="72.25" y="72.0" />
+    </edge>
+    <edge source="com.trescomas.repository.DepartmentRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="122.0" y="-49.5" />
+      <point x="6405.769054180741" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.config.security.JwtTokenUtil" target="com.trescomas.config.properties.JwtProperties" relationship="TO_ONE">
+      <point x="0.0" y="-160.5" />
+      <point x="1347.1861004874345" y="1989.0" />
+      <point x="1719.8333333333335" y="1989.0" />
+      <point x="-40.25" y="50.0" />
+    </edge>
+    <edge source="com.trescomas.init.database.impl.UserDatabaseLoader" target="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" relationship="GENERALIZATION">
+      <point x="101.75" y="-61.5" />
+      <point x="6243.3190476190475" y="2748.0" />
+      <point x="9539.061100487434" y="2748.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="com.trescomas.repository.CandidateReviewRepository" target="com.trescomas.domain.model.CandidateReview" relationship="DEPENDENCY">
+      <point x="122.5" y="-27.5" />
+      <point x="8553.26905418074" y="1989.0" />
+      <point x="8436.26905418074" y="1989.0" />
+      <point x="8436.26905418074" y="960.0" />
+      <point x="5649.51309242596" y="960.0" />
+      <point x="5649.51309242596" y="910.0" />
+      <point x="5497.145238095239" y="910.0" />
+      <point x="84.0" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.User" relationship="TO_ONE">
+      <point x="-70.57142857142844" y="-171.5" />
+      <point x="5420.395238095239" y="950.0" />
+      <point x="4518.4702380952385" y="950.0" />
+      <point x="4518.4702380952385" y="930.0" />
+      <point x="2524.0565476190477" y="930.0" />
+      <point x="91.125" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.repository.TechnologyRepository" target="com.trescomas.domain.model.Technology" relationship="DEPENDENCY">
+      <point x="79.25" y="-27.5" />
+      <point x="8086.519054180741" y="1969.0" />
+      <point x="8012.769054180741" y="1969.0" />
+      <point x="8012.769054180741" y="1632.0" />
+      <point x="5536.029166666667" y="1632.0" />
+      <point x="91.125" y="105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.enums.ReviewStatementTitle" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.5" />
+      <point x="5449.3452380952385" y="240.0" />
+      <point x="5419.261904761905" y="240.0" />
+      <point x="-71.25" y="83.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.Department" relationship="TO_MANY">
+      <point x="-30.375" y="105.5" />
+      <point x="5414.529166666667" y="1622.0" />
+      <point x="5287.054166666667" y="1622.0" />
+      <point x="5287.054166666667" y="1662.0" />
+      <point x="5250.859520997388" y="1662.0" />
+      <point x="52.19999999999982" y="-116.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.Technology" relationship="TO_MANY">
+      <point x="104.39999999999964" y="-116.5" />
+      <point x="5303.059520997389" y="1662.0" />
+      <point x="5475.279166666667" y="1662.0" />
+      <point x="30.375" y="105.5" />
     </edge>
     <edge source="com.trescomas.exception.RoleNotFoundException" target="com.trescomas.exception.ResourceNotFoundException" relationship="GENERALIZATION">
       <point x="0.0" y="-38.5" />
-      <point x="0.0" y="60.5" />
+      <point x="4883.733339895027" y="1989.0" />
+      <point x="4496.4702380952385" y="1989.0" />
+      <point x="4496.4702380952385" y="1969.0" />
+      <point x="3439.9511876640554" y="1969.0" />
+      <point x="99.5" y="60.5" />
     </edge>
-    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-94.5" />
-      <point x="853.0" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.Department" relationship="TO_ONE">
+      <point x="17.58333333333303" y="-127.5" />
+      <point x="5159.31667322836" y="1939.0" />
+      <point x="5111.659520997389" y="1939.0" />
+      <point x="-87.0" y="116.5" />
+    </edge>
+    <edge source="com.trescomas.repository.WorkerPositionRepository" target="com.trescomas.domain.model.WorkerPosition" relationship="DEPENDENCY">
+      <point x="102.75" y="-27.5" />
+      <point x="3948.893246156713" y="2708.0" />
+      <point x="5121.1861004874345" y="2708.0" />
+      <point x="0.0" y="94.5" />
     </edge>
     <edge source="com.trescomas.service.dataService.impl.UserDataServiceImpl" target="com.trescomas.service.impl.BaseDataService" relationship="GENERALIZATION">
-      <point x="-129.0" y="-138.5" />
-      <point x="3247.8169642857138" y="1040.0" />
-      <point x="2666.2499999999995" y="1040.0" />
+      <point x="206.4000000000001" y="-138.5" />
+      <point x="3453.543246156713" y="2758.0" />
+      <point x="6828.769054180741" y="2758.0" />
       <point x="0.0" y="105.5" />
     </edge>
-    <edge source="com.trescomas.service.impl.AuthenticationServiceImpl" target="com.trescomas.service.abstraction.AuthenticationService" relationship="REALIZATION">
-      <point x="0.0" y="-116.5" />
-      <point x="0.0" y="38.5" />
+    <edge source="com.trescomas.config.json.ObjectMapperConfig" target="com.trescomas.config.json.serializer.LocalDateDeserializer" relationship="TO_ONE">
+      <point x="-292.5" y="-83.5" />
+      <point x="810.0384615384617" y="3453.0" />
+      <point x="441.5" y="3453.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.trescomas.repository.UserRepository" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="-42.125" y="-60.5" />
+      <point x="2401.4511876640554" y="1969.0" />
+      <point x="2449.7083333333335" y="1969.0" />
+      <point x="2449.7083333333335" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
     </edge>
     <edge source="com.trescomas.service.impl.BaseDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="REALIZATION">
-      <point x="87.75" y="-105.5" />
-      <point x="2753.9999999999995" y="656.0" />
-      <point x="3298.084821428571" y="656.0" />
-      <point x="3298.084821428571" y="646.0" />
-      <point x="4003.709821428571" y="646.0" />
-      <point x="-62.75" y="71.5" />
+      <point x="0.0" y="-105.5" />
+      <point x="6828.769054180741" y="2394.0" />
+      <point x="6726.6023875140745" y="2394.0" />
+      <point x="0.0" y="71.5" />
     </edge>
-    <edge source="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" target="com.trescomas.init.database.abstraction.DatabaseLoader" relationship="REALIZATION">
-      <point x="94.5" y="-61.5" />
-      <point x="0.0" y="27.5" />
+    <edge source="com.trescomas.domain.model.Role" target="com.trescomas.domain.enums.RoleTitle" relationship="TO_ONE">
+      <point x="30.142857142857338" y="-105.5" />
+      <point x="2114.578957630292" y="1347.0" />
+      <point x="2145.6861004874345" y="1347.0" />
+      <point x="-50.75" y="105.5" />
     </edge>
-    <edge source="com.trescomas.domain.projection.role.RoleExcerptProjection" target="com.trescomas.domain.projection.BaseProjection" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-27.5" />
-      <point x="2088.0" y="1582.0" />
-      <point x="1841.0" y="1582.0" />
+    <edge source="com.trescomas.service.impl.AuthenticationServiceImpl" target="com.trescomas.domain.mapper.UserMapper" relationship="TO_ONE">
+      <point x="0.0" y="-116.5" />
+      <point x="839.5" y="2768.0" />
+      <point x="898.0" y="2768.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.model.CandidateReview" relationship="DEPENDENCY">
+      <point x="-30.875" y="94.5" />
+      <point x="5418.4702380952385" y="501.0" />
+      <point x="5413.145238095239" y="501.0" />
+      <point x="0.0" y="-94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.User" target="com.trescomas.domain.model.Role" relationship="TO_MANY">
+      <point x="-91.125" y="182.5" />
+      <point x="2341.8065476190477" y="930.0" />
+      <point x="1827.5718082114554" y="930.0" />
+      <point x="1827.5718082114554" y="1357.0" />
+      <point x="2024.1503862017203" y="1357.0" />
+      <point x="-60.28571428571422" y="-105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Role" target="com.trescomas.domain.model.User" relationship="TO_MANY">
+      <point x="90.42857142857156" y="-105.5" />
+      <point x="2174.864671916006" y="1367.0" />
+      <point x="2308.4361004874345" y="1367.0" />
+      <point x="2308.4361004874345" y="950.0" />
+      <point x="4518.4702380952385" y="950.0" />
+      <point x="4518.4702380952385" y="930.0" />
+      <point x="2524.0565476190477" y="930.0" />
+      <point x="91.125" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.ReviewStatement" relationship="DEPENDENCY">
+      <point x="89.60000000000036" y="-94.5" />
+      <point x="5502.745238095239" y="501.0" />
+      <point x="8331.610714285714" y="501.0" />
+      <point x="8331.610714285714" y="481.0" />
+      <point x="5541.9702380952385" y="481.0" />
+      <point x="92.625" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.TechnologyDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="REALIZATION">
+      <point x="-115.66666666666697" y="-105.5" />
+      <point x="8080.601579490046" y="2394.0" />
+      <point x="6726.6023875140745" y="2394.0" />
       <point x="0.0" y="71.5" />
     </edge>
     <edge source="com.trescomas.domain.model.WorkerPosition" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-94.5" />
-      <point x="603.5" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
-    </edge>
-    <edge source="com.trescomas.service.dataService.impl.TechnologyDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="REALIZATION">
-      <point x="0.0" y="-105.5" />
-      <point x="3413.2499999999995" y="656.0" />
-      <point x="3298.084821428571" y="656.0" />
-      <point x="3298.084821428571" y="646.0" />
-      <point x="4003.709821428571" y="646.0" />
-      <point x="-62.75" y="71.5" />
+      <point x="-90.42857142857156" y="-94.5" />
+      <point x="5030.757529058863" y="2374.0" />
+      <point x="4163.733339895027" y="2374.0" />
+      <point x="4163.733339895027" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
     </edge>
     <edge source="com.trescomas.init.database.impl.RoleDatabaseLoader" target="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" relationship="GENERALIZATION">
       <point x="0.0" y="-50.5" />
-      <point x="10036.625" y="656.0" />
-      <point x="10011.441964285714" y="656.0" />
+      <point x="9874.610714285714" y="2748.0" />
+      <point x="9539.061100487434" y="2748.0" />
       <point x="0.0" y="61.5" />
     </edge>
-    <edge source="com.trescomas.domain.model.EducationInfo" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-72.0" />
-      <point x="370.0" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
+    <edge source="com.trescomas.service.dataService.impl.DepartmentDataService" target="com.trescomas.domain.model.Department" relationship="DEPENDENCY">
+      <point x="0.0" y="-105.5" />
+      <point x="6075.144054180741" y="2374.0" />
+      <point x="6538.269054180741" y="2374.0" />
+      <point x="6538.269054180741" y="1989.0" />
+      <point x="5395.111093925741" y="1989.0" />
+      <point x="5395.111093925741" y="1969.0" />
+      <point x="5285.659520997389" y="1969.0" />
+      <point x="87.0" y="116.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.WorkerPosition" target="com.trescomas.domain.model.Worker" relationship="TO_MANY">
+      <point x="-60.285714285714675" y="-94.5" />
+      <point x="5060.90038620172" y="2374.0" />
+      <point x="5062.608339895027" y="2374.0" />
+      <point x="-79.125" y="127.5" />
     </edge>
     <edge source="com.trescomas.repository.TechnologyRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-27.5" />
-      <point x="8188.125" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
+      <point x="-79.25" y="-27.5" />
+      <point x="7928.019054180741" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.EducationInfo" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-53.5" y="-72.0" />
+      <point x="5598.645238095239" y="491.0" />
+      <point x="5586.895238095239" y="491.0" />
+      <point x="5586.895238095239" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
     </edge>
     <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-105.5" />
-      <point x="1365.9999999999995" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
+      <point x="-97.19999999999982" y="-105.5" />
+      <point x="5347.704166666667" y="1367.0" />
+      <point x="5290.645238095239" y="1367.0" />
+      <point x="5290.645238095239" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
     </edge>
-    <edge source="com.trescomas.domain.model.User" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-182.5" />
-      <point x="121.5" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.CandidateReview" relationship="TO_MANY">
+      <point x="35.285714285714675" y="-171.5" />
+      <point x="5526.252380952382" y="920.0" />
+      <point x="5441.145238095239" y="920.0" />
+      <point x="28.0" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.EducationInfo" target="com.trescomas.domain.enums.EducationType" relationship="TO_ONE">
+      <point x="53.5" y="-72.0" />
+      <point x="5705.645238095239" y="491.0" />
+      <point x="5717.395238095239" y="491.0" />
+      <point x="0.0" y="83.5" />
     </edge>
     <edge source="com.trescomas.init.database.impl.ReviewStatementDatabaseLoaded" target="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" relationship="GENERALIZATION">
       <point x="0.0" y="-50.5" />
-      <point x="9640.125" y="656.0" />
-      <point x="10011.441964285714" y="656.0" />
+      <point x="9478.110714285714" y="2748.0" />
+      <point x="9539.061100487434" y="2748.0" />
       <point x="0.0" y="61.5" />
     </edge>
-    <edge source="com.trescomas.repository.UserRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-60.5" />
-      <point x="6993.125" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
+    <edge source="com.trescomas.service.dataService.impl.DepartmentDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="REALIZATION">
+      <point x="117.33333333333303" y="-105.5" />
+      <point x="6192.4773875140745" y="2394.0" />
+      <point x="6726.6023875140745" y="2394.0" />
+      <point x="0.0" y="71.5" />
     </edge>
     <edge source="com.trescomas.service.dataService.impl.ReviewStatementDataServiceImpl" target="com.trescomas.service.impl.BaseDataService" relationship="GENERALIZATION">
-      <point x="-111.75" y="-72.5" />
-      <point x="4344.125" y="1040.0" />
-      <point x="2666.2499999999995" y="1040.0" />
+      <point x="-149.0" y="-72.5" />
+      <point x="8650.653568616435" y="2758.0" />
+      <point x="6828.769054180741" y="2758.0" />
       <point x="0.0" y="105.5" />
     </edge>
-    <edge source="com.trescomas.service.dataService.impl.DepartmentDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="REALIZATION">
-      <point x="0.0" y="-105.5" />
-      <point x="3039.7499999999995" y="656.0" />
-      <point x="3298.084821428571" y="656.0" />
-      <point x="3298.084821428571" y="646.0" />
-      <point x="4003.709821428571" y="646.0" />
-      <point x="-62.75" y="71.5" />
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.Candidate" relationship="TO_ONE">
+      <point x="-84.0" y="94.5" />
+      <point x="5329.145238095239" y="940.0" />
+      <point x="5455.6809523809525" y="940.0" />
+      <point x="-35.285714285714675" y="-171.5" />
     </edge>
-    <edge source="com.trescomas.repository.ReviewStatementRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-38.5" />
-      <point x="5628.125" y="656.0" />
-      <point x="7592.125" y="656.0" />
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.DepartmentType" relationship="TO_ONE">
+      <point x="-52.19999999999982" y="-116.5" />
+      <point x="5146.459520997389" y="1632.0" />
+      <point x="5009.395238095239" y="1632.0" />
+      <point x="-91.125" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.UserDataServiceImpl" target="com.trescomas.repository.UserRepository" relationship="TO_ONE">
+      <point x="-103.19999999999982" y="-138.5" />
+      <point x="3143.943246156713" y="2668.0" />
+      <point x="2992.5833333333335" y="2668.0" />
+      <point x="2992.5833333333335" y="2404.0" />
+      <point x="2443.5761876640554" y="2404.0" />
       <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.init.database.impl.UserDatabaseLoader" target="com.trescomas.service.dataService.abstraction.RoleDataService" relationship="TO_ONE">
+      <point x="-101.75" y="-61.5" />
+      <point x="6039.8190476190475" y="2768.0" />
+      <point x="3863.233339895027" y="2768.0" />
+      <point x="60.75" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.TechnologyDataService" target="com.trescomas.domain.model.Technology" relationship="DEPENDENCY">
+      <point x="115.66666666666697" y="-105.5" />
+      <point x="8311.93491282338" y="2374.0" />
+      <point x="8686.26905418074" y="2374.0" />
+      <point x="8686.26905418074" y="1662.0" />
+      <point x="8012.769054180741" y="1662.0" />
+      <point x="8012.769054180741" y="1632.0" />
+      <point x="5536.029166666667" y="1632.0" />
+      <point x="91.125" y="105.5" />
     </edge>
     <edge source="com.trescomas.service.dataService.impl.UserDataServiceImpl" target="com.trescomas.service.dataService.abstraction.UserDataService" relationship="REALIZATION">
-      <point x="129.0" y="-138.5" />
-      <point x="3505.8169642857138" y="1050.0" />
-      <point x="4111.75" y="1050.0" />
-      <point x="0.0" y="60.5" />
-    </edge>
-    <edge source="com.trescomas.repository.WorkerPositionRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-27.5" />
-      <point x="7804.125" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
+      <point x="-206.4000000000001" y="-138.5" />
+      <point x="3040.7432461567128" y="2678.0" />
+      <point x="2888.5833333333335" y="2678.0" />
+      <point x="93.5" y="60.5" />
     </edge>
     <edge source="com.trescomas.domain.projection.user.UserExcerptProjection" target="com.trescomas.domain.projection.BaseProjection" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-49.5" />
+      <point x="57.0" y="-49.5" />
+      <point x="2382.2083333333335" y="1652.0" />
+      <point x="2718.3958333333335" y="1652.0" />
       <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.repository.WorkerPositionRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="-102.75" y="-27.5" />
+      <point x="3743.393246156713" y="2698.0" />
+      <point x="4066.108339895027" y="2698.0" />
+      <point x="4066.108339895027" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.service.impl.AuthenticationServiceImpl" target="com.trescomas.config.security.JwtTokenUtil" relationship="TO_ONE">
+      <point x="130.19999999999982" y="-116.5" />
+      <point x="969.6999999999998" y="2768.0" />
+      <point x="1015.7761876640552" y="2768.0" />
+      <point x="1015.7761876640552" y="2404.0" />
+      <point x="1347.1861004874345" y="2404.0" />
+      <point x="0.0" y="160.5" />
     </edge>
     <edge source="com.trescomas.repository.RoleRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-38.5" />
-      <point x="9251.625" y="656.0" />
-      <point x="7592.125" y="656.0" />
-      <point x="0.0" y="60.5" />
+      <point x="69.5" y="-38.5" />
+      <point x="1990.0833333333335" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
     </edge>
-    <edge source="com.trescomas.service.dataService.impl.CandidateDataServiceImpl" target="com.trescomas.service.dataService.abstraction.CandidateDataService" relationship="REALIZATION">
+    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.enums.ReviewStatementTitle" relationship="TO_ONE">
+      <point x="82.33333333333303" y="-94.5" />
+      <point x="5531.678571428572" y="240.0" />
+      <point x="5561.761904761905" y="240.0" />
+      <point x="71.25" y="83.5" />
+    </edge>
+    <edge source="com.trescomas.repository.RoleRepository" target="com.trescomas.domain.model.Role" relationship="DEPENDENCY">
+      <point x="-69.5" y="-38.5" />
+      <point x="1851.0833333333335" y="1662.0" />
+      <point x="2084.4361004874345" y="1662.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.WorkerDataService" target="com.trescomas.domain.model.Worker" relationship="DEPENDENCY">
       <point x="0.0" y="-105.5" />
-      <point x="0.0" y="15.0" />
+      <point x="5099.518246156713" y="2728.0" />
+      <point x="6261.644054180741" y="2728.0" />
+      <point x="6261.644054180741" y="2404.0" />
+      <point x="5718.768246156713" y="2404.0" />
+      <point x="5718.768246156713" y="2354.0" />
+      <point x="5220.858339895027" y="2354.0" />
+      <point x="79.125" y="127.5" />
     </edge>
     <edge source="com.trescomas.domain.model.Role" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-90.42857142857156" y="-105.5" />
+      <point x="1994.007529058863" y="1367.0" />
+      <point x="1816.5718082114554" y="1367.0" />
+      <point x="1816.5718082114554" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.model.Department" relationship="TO_MANY">
+      <point x="30.375" y="94.5" />
+      <point x="5130.895238095239" y="1622.0" />
+      <point x="5287.054166666667" y="1622.0" />
+      <point x="5287.054166666667" y="1662.0" />
+      <point x="5250.859520997388" y="1662.0" />
+      <point x="52.19999999999982" y="-116.5" />
+    </edge>
+    <edge source="com.trescomas.repository.DepartmentRepository" target="com.trescomas.domain.model.Department" relationship="DEPENDENCY">
+      <point x="-122.0" y="-49.5" />
+      <point x="6161.769054180741" y="1989.0" />
+      <point x="5395.111093925741" y="1989.0" />
+      <point x="5395.111093925741" y="1969.0" />
+      <point x="5285.659520997389" y="1969.0" />
+      <point x="87.0" y="116.5" />
+    </edge>
+    <edge source="com.trescomas.init.database.abstraction.DatabaseLoaderManager" target="com.trescomas.init.database.abstraction.DatabaseLoader" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="10234.110714285714" y="2404.0" />
+      <point x="10314.610714285714" y="2404.0" />
+      <point x="10314.610714285714" y="2394.0" />
+      <point x="10042.486901949771" y="2394.0" />
+      <point x="60.33333333333394" y="27.5" />
+    </edge>
+    <edge source="com.trescomas.repository.DepartmentTypeRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="107.0" y="-27.5" />
+      <point x="5912.769054180741" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.service.impl.BaseDataService" target="com.trescomas.domain.model.BaseEntity" relationship="DEPENDENCY">
+      <point x="115.66666666666697" y="-105.5" />
+      <point x="6944.435720847408" y="2374.0" />
+      <point x="6952.0611004874345" y="2374.0" />
+      <point x="6952.0611004874345" y="250.0" />
+      <point x="6823.7773809523815" y="250.0" />
+      <point x="6823.7773809523815" y="230.0" />
+      <point x="5089.645238095239" y="230.0" />
+      <point x="62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.RoleDataServiceImpl" target="com.trescomas.service.dataService.abstraction.RoleDataService" relationship="REALIZATION">
+      <point x="95.33333333333326" y="-149.5" />
+      <point x="2124.693246156712" y="2688.0" />
+      <point x="3741.733339895027" y="2688.0" />
+      <point x="-60.75" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.projection.user.UserExcerptProjection" target="com.trescomas.domain.model.Role" relationship="DEPENDENCY">
+      <point x="-57.0" y="-49.5" />
+      <point x="2268.2083333333335" y="1662.0" />
+      <point x="2084.4361004874345" y="1662.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.UserDataServiceImpl" target="com.trescomas.service.dataService.abstraction.RoleDataService" relationship="TO_ONE">
+      <point x="103.19999999999982" y="-138.5" />
+      <point x="3350.3432461567127" y="2768.0" />
+      <point x="3863.233339895027" y="2768.0" />
+      <point x="60.75" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.Technology" relationship="TO_MANY">
+      <point x="-92.625" y="171.5" />
+      <point x="5398.341666666667" y="1367.0" />
+      <point x="5396.304166666667" y="1367.0" />
+      <point x="-48.600000000000364" y="-105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.Candidate" relationship="TO_MANY">
+      <point x="48.600000000000364" y="-105.5" />
+      <point x="5493.5041666666675" y="1367.0" />
+      <point x="5521.841666666667" y="1367.0" />
+      <point x="30.875" y="171.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.enums.DepartmentTypeTitle" relationship="DEPENDENCY">
+      <point x="0.0" y="-94.5" />
+      <point x="5100.520238095239" y="1367.0" />
+      <point x="5070.895238095239" y="1367.0" />
+      <point x="-69.75" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.assembler.UserModelAssembler" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.0" />
+      <point x="4022.233339895027" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.repository.ReviewStatementRepository" target="com.trescomas.domain.model.ReviewStatement" relationship="DEPENDENCY">
+      <point x="110.25" y="-38.5" />
+      <point x="7718.519054180741" y="1969.0" />
+      <point x="7613.769054180741" y="1969.0" />
+      <point x="7613.769054180741" y="501.0" />
+      <point x="8331.610714285714" y="501.0" />
+      <point x="8331.610714285714" y="481.0" />
+      <point x="5541.9702380952385" y="481.0" />
+      <point x="92.625" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.Candidate" relationship="DEPENDENCY">
+      <point x="97.19999999999982" y="-105.5" />
+      <point x="5542.104166666667" y="1367.0" />
+      <point x="7265.269054180741" y="1367.0" />
+      <point x="7265.269054180741" y="1357.0" />
+      <point x="5583.591666666667" y="1357.0" />
+      <point x="92.625" y="171.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.Technology" relationship="DEPENDENCY">
+      <point x="-30.875" y="171.5" />
+      <point x="5460.091666666667" y="1367.0" />
+      <point x="5444.904166666667" y="1367.0" />
       <point x="0.0" y="-105.5" />
-      <point x="1959.4999999999995" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
     </edge>
-    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
-      <point x="0.0" y="-127.5" />
-      <point x="2192.4999999999995" y="240.0" />
-      <point x="1237.7499999999995" y="240.0" />
-      <point x="1237.7499999999995" y="230.0" />
-      <point x="4408.0" y="230.0" />
-      <point x="-63.0" y="105.0" />
+    <edge source="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" target="com.trescomas.domain.model.BaseEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-61.5" />
+      <point x="9539.061100487434" y="2404.0" />
+      <point x="9505.935720847407" y="2404.0" />
+      <point x="9505.935720847407" y="250.0" />
+      <point x="6823.7773809523815" y="250.0" />
+      <point x="6823.7773809523815" y="230.0" />
+      <point x="5089.645238095239" y="230.0" />
+      <point x="62.25" y="105.0" />
     </edge>
-    <edge source="com.trescomas.domain.projection.role.TitleWithUsersProjection" target="com.trescomas.domain.projection.BaseProjection" relationship="INTERFACE_GENERALIZATION">
+    <edge source="com.trescomas.domain.model.WorkerPosition" target="com.trescomas.domain.enums.WorkerPositionTitle" relationship="DEPENDENCY">
+      <point x="30.142857142856883" y="-94.5" />
+      <point x="5151.328957630291" y="2364.0" />
+      <point x="5334.733339895027" y="2364.0" />
+      <point x="-67.5" y="116.5" />
+    </edge>
+    <edge source="com.trescomas.service.impl.AuthenticationServiceImpl" target="com.trescomas.service.dataService.abstraction.UserDataService" relationship="TO_ONE">
+      <point x="260.4000000000001" y="-116.5" />
+      <point x="1099.9" y="2678.0" />
+      <point x="2701.5833333333335" y="2678.0" />
+      <point x="-93.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-82.33333333333303" y="-94.5" />
+      <point x="5367.0119047619055" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.UserDataServiceImpl" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-138.5" />
+      <point x="3247.143246156713" y="2658.0" />
+      <point x="3025.5833333333335" y="2658.0" />
+      <point x="3025.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.repository.CandidateReviewRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="-122.5" y="-27.5" />
+      <point x="8308.26905418074" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.WorkerPosition" relationship="TO_ONE">
+      <point x="-26.375" y="127.5" />
+      <point x="5115.358339895027" y="2374.0" />
+      <point x="5091.043243344578" y="2374.0" />
+      <point x="-30.142857142856883" y="-94.5" />
+    </edge>
+    <edge source="com.trescomas.repository.CandidateRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="-54.0" y="-27.5" />
+      <point x="7205.769054180741" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.init.database.impl.DatabaseLoaderManagerImpl" target="com.trescomas.init.database.abstraction.DatabaseLoader" relationship="TO_MANY">
+      <point x="-128.33333333333394" y="-62.0" />
+      <point x="10105.77738095238" y="2738.0" />
+      <point x="9851.320235283103" y="2738.0" />
+      <point x="9851.320235283103" y="2404.0" />
+      <point x="9982.153568616435" y="2404.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.DepartmentDataService" target="com.trescomas.repository.DepartmentRepository" relationship="TO_ONE">
+      <point x="-117.33333333333303" y="-105.5" />
+      <point x="5957.810720847408" y="2364.0" />
+      <point x="6283.769054180741" y="2364.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.trescomas.config.json.ObjectMapperConfig" target="com.trescomas.config.json.serializer.LocalDateTimeDeserializer" relationship="TO_ONE">
+      <point x="97.5" y="-83.5" />
+      <point x="1200.0384615384617" y="3453.0" />
+      <point x="1350.5" y="3453.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.trescomas.repository.DepartmentTypeRepository" target="com.trescomas.domain.model.DepartmentType" relationship="DEPENDENCY">
+      <point x="-107.0" y="-27.5" />
+      <point x="5698.769054180741" y="1969.0" />
+      <point x="5800.269054180741" y="1969.0" />
+      <point x="5800.269054180741" y="1642.0" />
+      <point x="5191.645238095239" y="1642.0" />
+      <point x="91.125" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.abstraction.CandidateDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="7135.769054180741" y="2384.0" />
+      <point x="6549.269054180741" y="2384.0" />
+      <point x="6549.269054180741" y="2364.0" />
+      <point x="6642.9357208474075" y="2364.0" />
+      <point x="-83.66666666666697" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.init.database.impl.DatabaseLoaderManagerImpl" target="com.trescomas.init.database.abstraction.DatabaseLoader" relationship="DEPENDENCY">
+      <point x="128.33333333333394" y="-62.0" />
+      <point x="10362.444047619048" y="2768.0" />
+      <point x="10395.110714285714" y="2768.0" />
+      <point x="10395.110714285714" y="2404.0" />
+      <point x="10314.610714285714" y="2404.0" />
+      <point x="10314.610714285714" y="2394.0" />
+      <point x="10042.486901949771" y="2394.0" />
+      <point x="60.33333333333394" y="27.5" />
+    </edge>
+    <edge source="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" target="com.trescomas.service.dataService.abstraction.DataService" relationship="TO_ONE">
+      <point x="-125.0" y="-61.5" />
+      <point x="9414.061100487434" y="2364.0" />
+      <point x="6810.2690541807415" y="2364.0" />
+      <point x="83.66666666666697" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-89.60000000000036" y="-94.5" />
+      <point x="5323.545238095238" y="501.0" />
+      <point x="5315.3452380952385" y="501.0" />
+      <point x="5315.3452380952385" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.service.impl.AuthenticationServiceImpl" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="-130.19999999999982" y="-116.5" />
+      <point x="709.3000000000002" y="2768.0" />
+      <point x="722.1599128233793" y="2768.0" />
+      <point x="722.1599128233793" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.abstraction.RoleDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="INTERFACE_GENERALIZATION">
+      <point x="60.75" y="-60.5" />
+      <point x="3863.233339895027" y="2384.0" />
+      <point x="6549.269054180741" y="2384.0" />
+      <point x="6549.269054180741" y="2364.0" />
+      <point x="6642.9357208474075" y="2364.0" />
+      <point x="-83.66666666666697" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.service.impl.UserDetailsServiceImpl" target="com.trescomas.repository.UserRepository" relationship="TO_ONE">
+      <point x="0.0" y="-61.5" />
+      <point x="2435.0833333333335" y="2404.0" />
+      <point x="2443.5761876640554" y="2404.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.repository.WorkerRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="-99.25" y="-38.5" />
+      <point x="5581.269054180741" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.exception.UserNotFoundException" target="com.trescomas.exception.ResourceNotFoundException" relationship="GENERALIZATION">
       <point x="0.0" y="-38.5" />
-      <point x="1584.0" y="1582.0" />
-      <point x="1841.0" y="1582.0" />
+      <point x="4605.733339895027" y="1989.0" />
+      <point x="4496.4702380952385" y="1989.0" />
+      <point x="4496.4702380952385" y="1969.0" />
+      <point x="3439.9511876640554" y="1969.0" />
+      <point x="99.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.abstraction.UserDataService" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="-93.5" y="-60.5" />
+      <point x="2701.5833333333335" y="2374.0" />
+      <point x="3003.5833333333335" y="2374.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.config.json.serializer.LocalDateTimeSerializer" target="com.trescomas.service.abstraction.DateTimeService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="889.0" y="3307.0" />
+      <point x="1119.75" y="3307.0" />
+      <point x="1119.75" y="3297.0" />
+      <point x="809.25" y="3297.0" />
+      <point x="72.25" y="72.0" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.abstraction.UserDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="INTERFACE_GENERALIZATION">
+      <point x="93.5" y="-60.5" />
+      <point x="2888.5833333333335" y="2384.0" />
+      <point x="6549.269054180741" y="2384.0" />
+      <point x="6549.269054180741" y="2364.0" />
+      <point x="6642.9357208474075" y="2364.0" />
+      <point x="-83.66666666666697" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.config.json.ObjectMapperConfig" target="com.trescomas.config.json.serializer.LocalDateSerializer" relationship="TO_ONE">
+      <point x="292.5" y="-83.5" />
+      <point x="1395.0384615384617" y="3453.0" />
+      <point x="1798.0" y="3453.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="com.trescomas.exception.CandidateNotFoundException" target="com.trescomas.exception.ResourceNotFoundException" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="4317.233339895027" y="1989.0" />
+      <point x="4496.4702380952385" y="1989.0" />
+      <point x="4496.4702380952385" y="1969.0" />
+      <point x="3439.9511876640554" y="1969.0" />
+      <point x="99.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.Department" relationship="DEPENDENCY">
+      <point x="-91.125" y="105.5" />
+      <point x="5353.779166666667" y="1652.0" />
+      <point x="5059.07559242596" y="1652.0" />
+      <point x="5059.07559242596" y="1662.0" />
+      <point x="5198.659520997389" y="1662.0" />
+      <point x="0.0" y="-116.5" />
+    </edge>
+    <edge source="com.trescomas.domain.mapper.UserMapper" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.0" />
+      <point x="898.0" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.enums.DepartmentTypeTitle" relationship="TO_ONE">
+      <point x="81.0" y="-94.5" />
+      <point x="5181.520238095239" y="1367.0" />
+      <point x="5210.395238095239" y="1367.0" />
+      <point x="69.75" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-81.0" y="-94.5" />
+      <point x="5019.520238095239" y="1367.0" />
+      <point x="4990.645238095239" y="1367.0" />
+      <point x="4990.645238095239" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.RoleDataServiceImpl" target="com.trescomas.domain.model.Role" relationship="DEPENDENCY">
+      <point x="-95.33333333333303" y="-149.5" />
+      <point x="1934.026579490046" y="2668.0" />
+      <point x="1669.0833333333335" y="2668.0" />
+      <point x="1669.0833333333335" y="1662.0" />
+      <point x="2084.4361004874345" y="1662.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="com.trescomas.service.impl.AuthenticationServiceImpl" target="com.trescomas.service.abstraction.AuthenticationService" relationship="REALIZATION">
+      <point x="-260.4" y="-116.5" />
+      <point x="579.1000000000004" y="2768.0" />
+      <point x="606.9361004874345" y="2768.0" />
+      <point x="74.5" y="38.5" />
+    </edge>
+    <edge source="com.trescomas.init.ApplicationStartupRunner" target="com.trescomas.config.rest.RepositoryConfig" relationship="TO_ONE">
+      <point x="0.0" y="-61.5" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="com.trescomas.domain.projection.role.RoleExcerptProjection" target="com.trescomas.domain.projection.BaseProjection" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-27.5" />
       <point x="0.0" y="71.5" />
     </edge>
-    <edge source="com.trescomas.service.dataService.impl.WorkerDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="REALIZATION">
+    <edge source="com.trescomas.init.database.abstraction.AbstractDatabaseLoader" target="com.trescomas.init.database.abstraction.DatabaseLoader" relationship="REALIZATION">
+      <point x="125.0" y="-61.5" />
+      <point x="9664.061100487434" y="2394.0" />
+      <point x="9921.820235283103" y="2394.0" />
+      <point x="-60.33333333333394" y="27.5" />
+    </edge>
+    <edge source="com.trescomas.repository.WorkerRepository" target="com.trescomas.domain.model.Worker" relationship="DEPENDENCY">
+      <point x="99.25" y="-38.5" />
+      <point x="5779.894054180741" y="2404.0" />
+      <point x="5718.768246156713" y="2404.0" />
+      <point x="5718.768246156713" y="2354.0" />
+      <point x="5220.858339895027" y="2354.0" />
+      <point x="79.125" y="127.5" />
+    </edge>
+    <edge source="com.trescomas.repository.CandidateRepository" target="com.trescomas.domain.model.Candidate" relationship="DEPENDENCY">
+      <point x="54.0" y="-27.5" />
+      <point x="7313.769054180741" y="1969.0" />
+      <point x="7265.269054180741" y="1969.0" />
+      <point x="7265.269054180741" y="1357.0" />
+      <point x="5583.591666666667" y="1357.0" />
+      <point x="92.625" y="171.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.RoleDataServiceImpl" target="com.trescomas.repository.RoleRepository" relationship="TO_ONE">
+      <point x="0.0" y="-149.5" />
+      <point x="2029.359912823379" y="2658.0" />
+      <point x="1920.5833333333335" y="2658.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.User" relationship="TO_ONE">
+      <point x="-52.75" y="-127.5" />
+      <point x="5088.983339895027" y="1959.0" />
+      <point x="4518.4702380952385" y="1959.0" />
+      <point x="4518.4702380952385" y="930.0" />
+      <point x="2524.0565476190477" y="930.0" />
+      <point x="91.125" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.User" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-182.5" />
+      <point x="2432.9315476190477" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.repository.UserRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="126.375" y="-60.5" />
+      <point x="2569.9511876640554" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.config.security.JwtTokenFilter" target="com.trescomas.config.security.JwtTokenUtil" relationship="TO_ONE">
+      <point x="-130.0" y="-61.5" />
+      <point x="1265.0" y="2404.0" />
+      <point x="1347.1861004874345" y="2404.0" />
+      <point x="0.0" y="160.5" />
+    </edge>
+    <edge source="com.trescomas.repository.ReviewStatementRepository" target="com.trescomas.repository.BaseRepository" relationship="INTERFACE_GENERALIZATION">
+      <point x="-110.25" y="-38.5" />
+      <point x="7498.019054180741" y="1979.0" />
+      <point x="6174.161093925742" y="1979.0" />
+      <point x="-82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.ReviewStatement" relationship="TO_ONE">
+      <point x="44.80000000000018" y="-94.5" />
+      <point x="5457.945238095239" y="501.0" />
+      <point x="5480.2202380952385" y="501.0" />
+      <point x="30.875" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.CandidateDataServiceImpl" target="com.trescomas.repository.CandidateRepository" relationship="TO_ONE">
       <point x="0.0" y="-105.5" />
-      <point x="3756.7499999999995" y="656.0" />
-      <point x="3298.084821428571" y="656.0" />
-      <point x="3298.084821428571" y="646.0" />
-      <point x="4003.709821428571" y="646.0" />
-      <point x="-62.75" y="71.5" />
+      <point x="7749.236901949769" y="2728.0" />
+      <point x="7259.769054180741" y="2728.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.model.CandidateReview" relationship="TO_MANY">
+      <point x="-92.625" y="94.5" />
+      <point x="5356.7202380952385" y="501.0" />
+      <point x="5368.3452380952385" y="501.0" />
+      <point x="-44.80000000000018" y="-94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.projection.role.TitleWithUsersProjection" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="61.5" y="-38.5" />
+      <point x="3936.733339895027" y="1662.0" />
+      <point x="3880.733339895027" y="1662.0" />
+      <point x="3880.733339895027" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.CandidateDataServiceImpl" target="com.trescomas.service.dataService.abstraction.CandidateDataService" relationship="REALIZATION">
+      <point x="-119.33333333333303" y="-105.5" />
+      <point x="7629.903568616437" y="2738.0" />
+      <point x="7135.769054180741" y="2738.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.trescomas.service.impl.BaseDataService" target="com.trescomas.repository.BaseRepository" relationship="TO_ONE">
+      <point x="-115.66666666666697" y="-105.5" />
+      <point x="6713.1023875140745" y="2374.0" />
+      <point x="6571.269054180741" y="2374.0" />
+      <point x="6571.269054180741" y="1969.0" />
+      <point x="6339.411093925742" y="1969.0" />
+      <point x="82.5" y="60.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-17.58333333333303" y="-127.5" />
+      <point x="5124.150006561694" y="1949.0" />
+      <point x="4529.4702380952385" y="1949.0" />
+      <point x="4529.4702380952385" y="250.0" />
+      <point x="4965.145238095239" y="250.0" />
+      <point x="-62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.projection.role.TitleWithUsersProjection" target="com.trescomas.domain.projection.BaseProjection" relationship="INTERFACE_GENERALIZATION">
+      <point x="-61.5" y="-38.5" />
+      <point x="3813.733339895027" y="1652.0" />
+      <point x="2718.3958333333335" y="1652.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.controller.AuthenticationController" target="com.trescomas.service.abstraction.AuthenticationService" relationship="TO_ONE">
+      <point x="0.0" y="-83.5" />
+      <point x="247.0" y="2768.0" />
+      <point x="457.9361004874345" y="2768.0" />
+      <point x="-74.5" y="38.5" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.abstraction.ReviewStatementDataService" target="com.trescomas.domain.model.ReviewStatement" relationship="DEPENDENCY">
+      <point x="110.25" y="-49.5" />
+      <point x="9067.185720847407" y="2404.0" />
+      <point x="8962.435720847407" y="2404.0" />
+      <point x="8962.435720847407" y="501.0" />
+      <point x="8331.610714285714" y="501.0" />
+      <point x="8331.610714285714" y="481.0" />
+      <point x="5541.9702380952385" y="481.0" />
+      <point x="92.625" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.config.json.serializer.LocalDateSerializer" target="com.trescomas.service.abstraction.DateTimeService" relationship="TO_ONE">
+      <point x="0.0" y="-50.5" />
+      <point x="1798.0" y="3307.0" />
+      <point x="1119.75" y="3307.0" />
+      <point x="1119.75" y="3297.0" />
+      <point x="809.25" y="3297.0" />
+      <point x="72.25" y="72.0" />
+    </edge>
+    <edge source="com.trescomas.service.dataService.impl.WorkerDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="REALIZATION">
+      <point x="97.66666666666606" y="-105.5" />
+      <point x="5197.184912823379" y="2738.0" />
+      <point x="6644.769054180741" y="2738.0" />
+      <point x="6644.769054180741" y="2394.0" />
+      <point x="6726.6023875140745" y="2394.0" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.Application" target="com.trescomas.config.properties.JwtProperties" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.0" />
+      <point x="2171.5761876640554" y="1969.0" />
+      <point x="1800.3333333333335" y="1969.0" />
+      <point x="40.25" y="50.0" />
     </edge>
     <edge source="com.trescomas.service.dataService.abstraction.ReviewStatementDataService" target="com.trescomas.service.dataService.abstraction.DataService" relationship="INTERFACE_GENERALIZATION">
-      <point x="0.0" y="-49.5" />
-      <point x="4567.625" y="656.0" />
-      <point x="4744.625" y="656.0" />
-      <point x="4744.625" y="646.0" />
-      <point x="4129.209821428571" y="646.0" />
-      <point x="62.749999999999545" y="71.5" />
+      <point x="-110.25" y="-49.5" />
+      <point x="8846.685720847407" y="2384.0" />
+      <point x="6549.269054180741" y="2384.0" />
+      <point x="6549.269054180741" y="2364.0" />
+      <point x="6642.9357208474075" y="2364.0" />
+      <point x="-83.66666666666697" y="71.5" />
+    </edge>
+    <edge source="com.trescomas.service.abstraction.AuthenticationService" target="com.trescomas.domain.model.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.5" />
+      <point x="532.4361004874345" y="960.0" />
+      <point x="3003.5833333333335" y="960.0" />
+      <point x="3003.5833333333335" y="940.0" />
+      <point x="2463.3065476190477" y="940.0" />
+      <point x="30.375" y="182.5" />
     </edge>
     <edge source="com.trescomas.repository.BaseRepository" target="com.trescomas.domain.model.BaseEntity" relationship="DEPENDENCY">
       <point x="0.0" y="-60.5" />
-      <point x="7592.125" y="240.0" />
-      <point x="5467.499999999999" y="240.0" />
-      <point x="5467.499999999999" y="230.0" />
-      <point x="4534.0" y="230.0" />
-      <point x="63.0" y="105.0" />
+      <point x="6256.911093925742" y="250.0" />
+      <point x="6823.7773809523815" y="250.0" />
+      <point x="6823.7773809523815" y="230.0" />
+      <point x="5089.645238095239" y="230.0" />
+      <point x="62.25" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.repository.UserRepository" target="com.trescomas.exception.ResourceNotFoundException" relationship="CREATE">
+      <point x="42.125" y="-60.5" />
+      <point x="2485.7011876640554" y="1969.0" />
+      <point x="3240.9511876640554" y="1969.0" />
+      <point x="-99.5" y="60.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic" zoom="0.1" showDependencies="false" x="4787.68687179056" y="1661.257526361398" />
+  <settings layout="Hierarchic" zoom="1.0068856567560185" showDependencies="true" x="2647.2593029106433" y="2031.4423752990506" />
   <SelectedNodes />
   <Categories>
     <Category>Constructors</Category>
