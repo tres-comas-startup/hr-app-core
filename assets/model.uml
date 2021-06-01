@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.trescomas.domain.model</OriginalElement>
+  <nodes>
+    <node x="345.6742048346059" y="1825.0">com.trescomas.domain.model.Candidate</node>
+    <node x="826.1699745547074" y="1561.0">com.trescomas.domain.model.CandidateReview</node>
+    <node x="0.0" y="293.5">com.trescomas.domain.model.EducationInfo</node>
+    <node x="463.1908078880408" y="944.0">com.trescomas.domain.model.Worker</node>
+    <node x="366.1875" y="1550.0">com.trescomas.domain.model.Technology</node>
+    <node x="274.7992048346059" y="525.0">com.trescomas.domain.model.User</node>
+    <node x="798.9097328244272" y="1285.0">com.trescomas.domain.model.ReviewStatement</node>
+    <node x="317.6875" y="1263.0">com.trescomas.domain.model.Department</node>
+    <node x="128.5" y="977.0">com.trescomas.domain.model.DepartmentType</node>
+    <node x="550.25" y="613.0">com.trescomas.domain.model.WorkerPosition</node>
+    <node x="316.25" y="260.0">com.trescomas.domain.model.Role</node>
+    <node x="465.34723282442724" y="0.0">com.trescomas.domain.model.BaseEntity</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.User" relationship="TO_ONE">
+      <point x="-49.80000000000001" y="-171.5" />
+      <point x="420.3742048346059" y="1793.0" />
+      <point x="118.0" y="1793.0" />
+      <point x="118.0" y="917.0" />
+      <point x="396.2992048346059" y="917.0" />
+      <point x="0.0" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.Candidate" relationship="TO_MANY">
+      <point x="61.5" y="105.5" />
+      <point x="550.6875" y="1783.0" />
+      <point x="623.3124999999999" y="1783.0" />
+      <point x="623.3124999999999" y="1803.0" />
+      <point x="519.9742048346059" y="1803.0" />
+      <point x="49.799999999999955" y="-171.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.Technology" relationship="TO_MANY">
+      <point x="0.0" y="-171.5" />
+      <point x="470.1742048346059" y="1803.0" />
+      <point x="427.6875" y="1803.0" />
+      <point x="-61.5" y="105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.Department" relationship="TO_MANY">
+      <point x="-82.0" y="-105.5" />
+      <point x="407.1875" y="1523.0" />
+      <point x="382.9375" y="1523.0" />
+      <point x="-65.25" y="116.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.Worker" relationship="TO_MANY">
+      <point x="32.625" y="-116.5" />
+      <point x="480.8125" y="1231.0" />
+      <point x="622.9408078880408" y="1231.0" />
+      <point x="53.25" y="127.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.Technology" relationship="TO_MANY">
+      <point x="65.25" y="116.5" />
+      <point x="513.4375" y="1523.0" />
+      <point x="489.1875" y="1523.0" />
+      <point x="0.0" y="-105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.Department" relationship="TO_ONE">
+      <point x="-53.25" y="127.5" />
+      <point x="516.4408078880408" y="1221.0" />
+      <point x="441.2992048346059" y="1221.0" />
+      <point x="441.2992048346059" y="1241.0" />
+      <point x="415.5625" y="1241.0" />
+      <point x="-32.625" y="-116.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-94.5" />
+      <point x="251.5" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-1.1368683772161603E-13" y="-94.5" />
+      <point x="923.4097328244271" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.User" target="com.trescomas.domain.model.Role" relationship="TO_MANY">
+      <point x="30.375" y="-182.5" />
+      <point x="426.6742048346059" y="498.0" />
+      <point x="422.75" y="498.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Role" target="com.trescomas.domain.model.User" relationship="TO_MANY">
+      <point x="71.0" y="105.5" />
+      <point x="493.75" y="498.0" />
+      <point x="487.4242048346059" y="498.0" />
+      <point x="91.125" y="-182.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.WorkerPosition" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-94.5" />
+      <point x="656.75" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.WorkerPosition" target="com.trescomas.domain.model.Worker" relationship="TO_MANY">
+      <point x="-53.25" y="94.5" />
+      <point x="603.5" y="917.0" />
+      <point x="596.3158078880408" y="917.0" />
+      <point x="26.625" y="-127.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.WorkerPosition" relationship="TO_ONE">
+      <point x="79.875" y="-127.5" />
+      <point x="649.5658078880408" y="917.0" />
+      <point x="710.0" y="917.0" />
+      <point x="53.25" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.EducationInfo" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.0" />
+      <point x="107.0" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.User" relationship="TO_ONE">
+      <point x="-79.875" y="-127.5" />
+      <point x="489.8158078880408" y="917.0" />
+      <point x="396.2992048346059" y="917.0" />
+      <point x="0.0" y="182.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Technology" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="82.0" y="-105.5" />
+      <point x="571.1875" y="1523.0" />
+      <point x="788.4097328244272" y="1523.0" />
+      <point x="788.4097328244272" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.User" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-91.125" y="-182.5" />
+      <point x="305.1742048346059" y="498.0" />
+      <point x="279.2992048346059" y="498.0" />
+      <point x="279.2992048346059" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.CandidateReview" relationship="TO_MANY">
+      <point x="99.60000000000002" y="-171.5" />
+      <point x="569.7742048346059" y="1793.0" />
+      <point x="996.4199745547074" y="1793.0" />
+      <point x="56.75" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.Candidate" relationship="TO_ONE">
+      <point x="-56.75" y="94.5" />
+      <point x="882.9199745547074" y="1783.0" />
+      <point x="623.3124999999999" y="1783.0" />
+      <point x="623.3124999999999" y="1803.0" />
+      <point x="519.9742048346059" y="1803.0" />
+      <point x="49.799999999999955" y="-171.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.DepartmentType" relationship="TO_ONE">
+      <point x="-97.875" y="-116.5" />
+      <point x="350.3125" y="1241.0" />
+      <point x="190.0" y="1241.0" />
+      <point x="-61.5" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Candidate" target="com.trescomas.domain.model.EducationInfo" relationship="GENERALIZATION">
+      <point x="-99.60000000000002" y="-171.5" />
+      <point x="370.5742048346059" y="1803.0" />
+      <point x="107.0" y="1803.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.ReviewStatement" relationship="TO_ONE">
+      <point x="-75.66666666666663" y="-94.5" />
+      <point x="864.0033078880408" y="1523.0" />
+      <point x="861.1597328244272" y="1523.0" />
+      <point x="-62.25" y="94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.User" target="com.trescomas.domain.model.Role" relationship="DEPENDENCY">
+      <point x="-30.375" y="-182.5" />
+      <point x="365.9242048346059" y="498.0" />
+      <point x="351.75" y="498.0" />
+      <point x="-71.0" y="105.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.CandidateReview" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="75.66666666666674" y="-94.5" />
+      <point x="1015.3366412213742" y="1523.0" />
+      <point x="1058.4097328244272" y="1523.0" />
+      <point x="1058.4097328244272" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.ReviewStatement" target="com.trescomas.domain.model.CandidateReview" relationship="TO_MANY">
+      <point x="62.25" y="94.5" />
+      <point x="985.6597328244272" y="1523.0" />
+      <point x="939.6699745547076" y="1523.0" />
+      <point x="1.1368683772161603E-13" y="-94.5" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Department" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="97.875" y="-116.5" />
+      <point x="546.0625" y="1241.0" />
+      <point x="773.75" y="1241.0" />
+      <point x="773.75" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Role" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-105.5" />
+      <point x="422.75" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.Worker" target="com.trescomas.domain.model.BaseEntity" relationship="GENERALIZATION">
+      <point x="-26.625" y="-127.5" />
+      <point x="543.0658078880408" y="917.0" />
+      <point x="539.75" y="917.0" />
+      <point x="539.75" y="235.0" />
+      <point x="591.3472328244272" y="235.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="com.trescomas.domain.model.DepartmentType" target="com.trescomas.domain.model.Department" relationship="TO_MANY">
+      <point x="61.5" y="94.5" />
+      <point x="313.0" y="1221.0" />
+      <point x="441.2992048346059" y="1221.0" />
+      <point x="441.2992048346059" y="1241.0" />
+      <point x="415.5625" y="1241.0" />
+      <point x="-32.625" y="-116.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3234681117132138" showDependencies="true" x="441.0" y="1189.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
